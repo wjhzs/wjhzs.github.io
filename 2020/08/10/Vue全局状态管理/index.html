@@ -19,24 +19,24 @@
     
     
     
-    <title>测试 | 魏经海个人博客 | Welcome</title>
+    <title>Vue全局状态管理 | 魏经海个人博客 | Welcome</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="theme-color" content="#3F51B5">
     
     
-    <meta name="keywords" content="">
-    <meta name="description" content="学习心得、资源分享、前端知识总结">
+    <meta name="keywords" content="Vue全局状态管理模式">
+    <meta name="description" content="全局状态管理  多组件共享状态 多个组件使用同一个数据 任何一个组件发生改变 其他的组件也要跟着发生相应的变化基本使用 下载 npm install vuex 创建全局状态管理的实例 注册 在组件里使用全局状态值a.获取渲染全局状态值b.修改全局状态值  5大核心state 全局状态数据mutation 规定只有mutation才能修改state 通过commit方法触发action   可以放异">
 <meta property="og:type" content="article">
-<meta property="og:title" content="测试">
-<meta property="og:url" content="https://wjhzs.github.io/2020/07/23/%E6%B5%8B%E8%AF%95/index.html">
+<meta property="og:title" content="Vue全局状态管理">
+<meta property="og:url" content="https://wjhzs.github.io/2020/08/10/Vue%E5%85%A8%E5%B1%80%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86/index.html">
 <meta property="og:site_name" content="魏经海个人博客">
-<meta property="og:description" content="学习心得、资源分享、前端知识总结">
+<meta property="og:description" content="全局状态管理  多组件共享状态 多个组件使用同一个数据 任何一个组件发生改变 其他的组件也要跟着发生相应的变化基本使用 下载 npm install vuex 创建全局状态管理的实例 注册 在组件里使用全局状态值a.获取渲染全局状态值b.修改全局状态值  5大核心state 全局状态数据mutation 规定只有mutation才能修改state 通过commit方法触发action   可以放异">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-07-23T03:21:44.000Z">
-<meta property="article:modified_time" content="2020-07-23T11:19:48.740Z">
+<meta property="article:published_time" content="2020-08-10T01:04:40.000Z">
+<meta property="article:modified_time" content="2020-08-10T01:10:35.816Z">
 <meta property="article:author" content="魏经海">
-<meta property="article:tag" content="魏经海个人博客、前端、前端学习、前端资源">
+<meta property="article:tag" content="Vue全局状态管理模式">
 <meta name="twitter:card" content="summary">
     
     <link rel="shortcut icon" href="/img/mine.ico">
@@ -137,7 +137,7 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">测试</div>
+        <div class="flex-col header-title ellipsis">Vue全局状态管理</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -159,13 +159,15 @@
 <header class="content-header post-header">
 
     <div class="container fade-scale">
-        <h1 class="title">测试</h1>
+        <h1 class="title">Vue全局状态管理</h1>
         <h5 class="subtitle">
             
-                <time datetime="2020-07-23T03:21:44.000Z" itemprop="datePublished" class="page-time">
-  2020-07-23
+                <time datetime="2020-08-10T01:04:40.000Z" itemprop="datePublished" class="page-time">
+  2020-08-10
 </time>
 
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Vue/">Vue</a></li></ul>
 
             
         </h5>
@@ -179,16 +181,25 @@
 
 <div class="container body-wrap">
     
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#基本使用"><span class="post-toc-number">1.</span> <span class="post-toc-text">基本使用</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#5大核心"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">5大核心</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#action-存放异步"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">action 存放异步</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#最简版"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">最简版</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#模块化"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">模块化</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#稍微复杂版"><span class="post-toc-number">1.5.</span> <span class="post-toc-text">稍微复杂版</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#辅助函数"><span class="post-toc-number">1.6.</span> <span class="post-toc-text">辅助函数</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#值类型向计算属性映射"><span class="post-toc-number">1.6.1.</span> <span class="post-toc-text">值类型向计算属性映射</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#函数类型向methods进行映射"><span class="post-toc-number">1.6.2.</span> <span class="post-toc-text">函数类型向methods进行映射</span></a></li></ol></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#vue开发者工具-vue-js-devtools"><span class="post-toc-number">1.7.</span> <span class="post-toc-text">vue开发者工具 vue.js devtools</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
 
-<article id="post-测试"
+
+<article id="post-Vue全局状态管理"
   class="post-article article-type-post fade" itemprop="blogPost">
 
     <div class="post-card">
-        <h1 class="post-card-title">测试</h1>
+        <h1 class="post-card-title">Vue全局状态管理</h1>
         <div class="post-meta">
-            <time class="post-time" title="2020-07-23 11:21:44" datetime="2020-07-23T03:21:44.000Z"  itemprop="datePublished">2020-07-23</time>
+            <time class="post-time" title="2020-08-10 09:04:40" datetime="2020-08-10T01:04:40.000Z"  itemprop="datePublished">2020-08-10</time>
 
             
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Vue/">Vue</a></li></ul>
+
 
 
             
@@ -199,7 +210,37 @@
 
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            
+            <p>全局状态管理</p>
+<ol>
+<li>多组件共享状态 多个组件使用同一个数据</li>
+<li>任何一个组件发生改变 其他的组件也要跟着发生相应的变化<h3 id="基本使用"><a href="#基本使用" class="headerlink" title="基本使用"></a>基本使用</h3></li>
+<li>下载 npm install vuex</li>
+<li>创建全局状态管理的实例</li>
+<li>注册</li>
+<li>在组件里使用全局状态值<br>a.获取渲染全局状态值<br>b.修改全局状态值</li>
+</ol>
+<h4 id="5大核心"><a href="#5大核心" class="headerlink" title="5大核心"></a>5大核心</h4><p>state 全局状态数据<br>mutation 规定只有mutation才能修改state 通过commit方法触发<br>action   可以放异步操作 触发mutation   通过dispatch 触发<br>getter   vuex里的计算属性 和state值进行关联 state发生改变<br>         可以重新计算，并且可以在页面上直接使用</p>
+<h4 id="action-存放异步"><a href="#action-存放异步" class="headerlink" title="action 存放异步"></a>action 存放异步</h4><ol>
+<li>统一管理异步请求减少代码量</li>
+<li>时间旅行更加准确 vue的开发者工具</li>
+</ol>
+<h4 id="最简版"><a href="#最简版" class="headerlink" title="最简版"></a>最简版</h4><ol>
+<li>组件里通过 $store.state 获取全局状态数据进行渲染</li>
+<li>通过  $store.commit 方法触发mutation 修改全局状态值 整个页面都会变</li>
+</ol>
+<h4 id="模块化"><a href="#模块化" class="headerlink" title="模块化"></a>模块化</h4><ol>
+<li>模块化之后state的取值需要添加一级模块名 其他的三个核心不变</li>
+<li>可以在模块里添加命名空间 作用就是在 mutation getters actions的名字前面 添加模块名<br>用处就是防止名字冲突<h4 id="稍微复杂版"><a href="#稍微复杂版" class="headerlink" title="稍微复杂版"></a>稍微复杂版</h4></li>
+<li>组件里通过 $store.state 获取全局状态数据进行渲染</li>
+<li>通过  $store.dispath方法 触发action里的方法</li>
+<li>action 触发mutation进行修改全局状态值</li>
+</ol>
+<h4 id="辅助函数"><a href="#辅助函数" class="headerlink" title="辅助函数"></a>辅助函数</h4><p>帮助我们减少代码量</p>
+<h5 id="值类型向计算属性映射"><a href="#值类型向计算属性映射" class="headerlink" title="值类型向计算属性映射"></a>值类型向计算属性映射</h5><p>mapState  将全局状态管理的state值映射到使用组价的计算属性<br>mapGetters 将全局状态管理的getters值映射到使用组价的计算属性</p>
+<h5 id="函数类型向methods进行映射"><a href="#函数类型向methods进行映射" class="headerlink" title="函数类型向methods进行映射"></a>函数类型向methods进行映射</h5><p>mapMutations   将mutation的值映射到 方法里<br>mapActions    将actions里的值映射到方法</p>
+<h4 id="vue开发者工具-vue-js-devtools"><a href="#vue开发者工具-vue-js-devtools" class="headerlink" title="vue开发者工具 vue.js devtools"></a>vue开发者工具 vue.js devtools</h4><p>在谷歌浏览器网上应用商店下载… 可以先下载谷歌访问助手再进应用商店</p>
+<p>开发者工具绿了 该网页一定是vue做的<br>vue做的网页开发者工具不一定绿</p>
+
         </div>
 
         <blockquote class="post-copyright">
@@ -207,7 +248,7 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2020-07-23T11:19:48.740Z" itemprop="dateUpdated">2020-07-23 19:19:48</time>
+    最后更新时间：<time datetime="2020-08-10T01:10:35.816Z" itemprop="dateUpdated">2020-08-10 09:10:35</time>
 </span><br>
 
 
@@ -233,6 +274,8 @@
 
         <div class="post-footer">
             
+	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Vue%E5%85%A8%E5%B1%80%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86%E6%A8%A1%E5%BC%8F/" rel="tag">Vue全局状态管理模式</a></li></ul>
+
 
             
 <div class="page-share-wrap">
@@ -241,7 +284,7 @@
 <div class="page-share" id="pageShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://wjhzs.github.io/2020/07/23/%E6%B5%8B%E8%AF%95/&title=《测试》 — 魏经海个人博客&pic=https://wjhzs.github.io/img/wei.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://wjhzs.github.io/2020/08/10/Vue%E5%85%A8%E5%B1%80%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86/&title=《Vue全局状态管理》 — 魏经海个人博客&pic=https://wjhzs.github.io/img/wei.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -251,22 +294,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://wjhzs.github.io/2020/07/23/%E6%B5%8B%E8%AF%95/&title=《测试》 — 魏经海个人博客&source=学习心得、资源分享、前端知识总结" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://wjhzs.github.io/2020/08/10/Vue%E5%85%A8%E5%B1%80%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86/&title=《Vue全局状态管理》 — 魏经海个人博客&source=学习心得、资源分享、前端知识总结" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://wjhzs.github.io/2020/07/23/%E6%B5%8B%E8%AF%95/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://wjhzs.github.io/2020/08/10/Vue%E5%85%A8%E5%B1%80%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《测试》 — 魏经海个人博客&url=https://wjhzs.github.io/2020/07/23/%E6%B5%8B%E8%AF%95/&via=https://wjhzs.github.io" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Vue全局状态管理》 — 魏经海个人博客&url=https://wjhzs.github.io/2020/08/10/Vue%E5%85%A8%E5%B1%80%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86/&via=https://wjhzs.github.io" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://wjhzs.github.io/2020/07/23/%E6%B5%8B%E8%AF%95/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://wjhzs.github.io/2020/08/10/Vue%E5%85%A8%E5%B1%80%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -286,21 +329,14 @@
     </div>
 
     
-<nav class="post-nav flex-row flex-justify-between">
-  
-    <div class="waves-block waves-effect prev">
-      <a href="/2020/08/10/Vue%E5%85%A8%E5%B1%80%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86/" id="post-prev" class="post-nav-link">
-        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
-        <h4 class="title">Vue全局状态管理</h4>
-      </a>
-    </div>
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
   
 
   
     <div class="waves-block waves-effect next">
-      <a href="/2020/07/23/Mongobd/" id="post-next" class="post-nav-link">
+      <a href="/2020/07/23/%E6%B5%8B%E8%AF%95/" id="post-next" class="post-nav-link">
         <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
-        <h4 class="title">Mongobd</h4>
+        <h4 class="title">测试</h4>
       </a>
     </div>
   
@@ -422,7 +458,7 @@
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://wjhzs.github.io/2020/07/23/%E6%B5%8B%E8%AF%95/&title=《测试》 — 魏经海个人博客&pic=https://wjhzs.github.io/img/wei.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://wjhzs.github.io/2020/08/10/Vue%E5%85%A8%E5%B1%80%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86/&title=《Vue全局状态管理》 — 魏经海个人博客&pic=https://wjhzs.github.io/img/wei.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -432,22 +468,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://wjhzs.github.io/2020/07/23/%E6%B5%8B%E8%AF%95/&title=《测试》 — 魏经海个人博客&source=学习心得、资源分享、前端知识总结" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://wjhzs.github.io/2020/08/10/Vue%E5%85%A8%E5%B1%80%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86/&title=《Vue全局状态管理》 — 魏经海个人博客&source=学习心得、资源分享、前端知识总结" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://wjhzs.github.io/2020/07/23/%E6%B5%8B%E8%AF%95/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://wjhzs.github.io/2020/08/10/Vue%E5%85%A8%E5%B1%80%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《测试》 — 魏经海个人博客&url=https://wjhzs.github.io/2020/07/23/%E6%B5%8B%E8%AF%95/&via=https://wjhzs.github.io" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Vue全局状态管理》 — 魏经海个人博客&url=https://wjhzs.github.io/2020/08/10/Vue%E5%85%A8%E5%B1%80%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86/&via=https://wjhzs.github.io" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://wjhzs.github.io/2020/07/23/%E6%B5%8B%E8%AF%95/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://wjhzs.github.io/2020/08/10/Vue%E5%85%A8%E5%B1%80%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -458,7 +494,7 @@
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
-    <img src="//api.qrserver.com/v1/create-qr-code/?data=https://wjhzs.github.io/2020/07/23/%E6%B5%8B%E8%AF%95/" alt="微信分享二维码">
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=https://wjhzs.github.io/2020/08/10/Vue%E5%85%A8%E5%B1%80%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86/" alt="微信分享二维码">
 </div>
 
 
