@@ -19,24 +19,24 @@
     
     
     
-    <title>git操作 | 魏经海个人博客 | Welcome</title>
+    <title>git分支操作 | 魏经海个人博客 | Welcome</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="theme-color" content="#3F51B5">
     
     
-    <meta name="keywords" content="git介绍">
-    <meta name="description" content="git介绍git是一款本地项目管理工具，git在使用时必须严格遵守项目git规范，否则会影响整个项目的进度和文件的整理保存。 git官网：https:&#x2F;&#x2F;github.com&#x2F;  全英文 gittee官网：https:&#x2F;&#x2F;gitee.com&#x2F; 中文版git">
+    <meta name="keywords" content="git分支">
+    <meta name="description" content="分支分支   将用户的提交和修改按照时间形成一条链叫做分支 总结git基本指令 git status   查看当前仓库分支的一个基本状态 git init      在本地初始化一个仓库 git add  &lt;file,dir&gt;  将工作区的修改提交到暂存区 git commit -m &#39;注释&#39;  将暂存区的修改提交到分支 git log      打印提交记录 git">
 <meta property="og:type" content="article">
-<meta property="og:title" content="git操作">
-<meta property="og:url" content="https://wjhzs.github.io/2020/07/23/git%E6%93%8D%E4%BD%9C/index.html">
+<meta property="og:title" content="git分支操作">
+<meta property="og:url" content="https://wjhzs.github.io/2020/08/15/git%E5%88%86%E6%94%AF%E6%93%8D%E4%BD%9C/index.html">
 <meta property="og:site_name" content="魏经海个人博客">
-<meta property="og:description" content="git介绍git是一款本地项目管理工具，git在使用时必须严格遵守项目git规范，否则会影响整个项目的进度和文件的整理保存。 git官网：https:&#x2F;&#x2F;github.com&#x2F;  全英文 gittee官网：https:&#x2F;&#x2F;gitee.com&#x2F; 中文版git">
+<meta property="og:description" content="分支分支   将用户的提交和修改按照时间形成一条链叫做分支 总结git基本指令 git status   查看当前仓库分支的一个基本状态 git init      在本地初始化一个仓库 git add  &lt;file,dir&gt;  将工作区的修改提交到暂存区 git commit -m &#39;注释&#39;  将暂存区的修改提交到分支 git log      打印提交记录 git">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-07-23T02:45:39.000Z">
-<meta property="article:modified_time" content="2020-08-14T11:20:39.003Z">
+<meta property="article:published_time" content="2020-08-15T02:17:29.000Z">
+<meta property="article:modified_time" content="2020-08-15T02:25:52.687Z">
 <meta property="article:author" content="魏经海">
-<meta property="article:tag" content="git介绍">
+<meta property="article:tag" content="git分支">
 <meta name="twitter:card" content="summary">
     
     <link rel="shortcut icon" href="/img/mine.ico">
@@ -137,7 +137,7 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">git操作</div>
+        <div class="flex-col header-title ellipsis">git分支操作</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -159,11 +159,11 @@
 <header class="content-header post-header">
 
     <div class="container fade-scale">
-        <h1 class="title">git操作</h1>
+        <h1 class="title">git分支操作</h1>
         <h5 class="subtitle">
             
-                <time datetime="2020-07-23T02:45:39.000Z" itemprop="datePublished" class="page-time">
-  2020-07-23
+                <time datetime="2020-08-15T02:17:29.000Z" itemprop="datePublished" class="page-time">
+  2020-08-15
 </time>
 
 
@@ -184,18 +184,18 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
             <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#git介绍"><span class="post-toc-number">1.</span> <span class="post-toc-text">git介绍</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#git的安装"><span class="post-toc-number">2.</span> <span class="post-toc-text">git的安装</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#git的工作原理"><span class="post-toc-number">3.</span> <span class="post-toc-text">git的工作原理</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#回滚操作"><span class="post-toc-number">4.</span> <span class="post-toc-text">回滚操作</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#使用GitHub进行云存储git项目文件"><span class="post-toc-number">5.</span> <span class="post-toc-text">使用GitHub进行云存储git项目文件</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#分支"><span class="post-toc-number">1.</span> <span class="post-toc-text">分支</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#git的分支"><span class="post-toc-number">2.</span> <span class="post-toc-text">git的分支</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#角色"><span class="post-toc-number">3.</span> <span class="post-toc-text">角色</span></a></li></ol>
         </nav>
     </aside>
 
 
-<article id="post-git操作"
+<article id="post-git分支操作"
   class="post-article article-type-post fade" itemprop="blogPost">
 
     <div class="post-card">
-        <h1 class="post-card-title">git操作</h1>
+        <h1 class="post-card-title">git分支操作</h1>
         <div class="post-meta">
-            <time class="post-time" title="2020-07-23 10:45:39" datetime="2020-07-23T02:45:39.000Z"  itemprop="datePublished">2020-07-23</time>
+            <time class="post-time" title="2020-08-15 10:17:29" datetime="2020-08-15T02:17:29.000Z"  itemprop="datePublished">2020-08-15</time>
 
             
 	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/git/">git</a></li></ul>
@@ -210,49 +210,39 @@
 
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <h4 id="git介绍"><a href="#git介绍" class="headerlink" title="git介绍"></a>git介绍</h4><p>git是一款本地项目管理工具，git在使用时必须严格遵守项目git规范，否则会影响整个项目的进度和文件的整理保存。</p>
-<p>git官网：<a href="https://github.com/" target="_blank" rel="noopener">https://github.com/</a>  全英文</p>
-<p>gittee官网：<a href="https://gitee.com/" target="_blank" rel="noopener">https://gitee.com/</a> 中文版git</p>
-<a id="more"></a>
-
-<h4 id="git的安装"><a href="#git的安装" class="headerlink" title="git的安装"></a>git的安装</h4><p>通过官网下载，一直点击下一步就ok！</p>
-<p>在任意一个文件目录下点击鼠标右键，出现<strong>Git GUI Here</strong> 和 <strong>Git Bash Here</strong> 就说明安装成功</p>
-<p>首次使用git，要在命令行中进行以下操作：</p>
-<p>1.<code>git config --list</code> 检查git全局配置</p>
-<p>执行之后，显示的是git默认的系统配置</p>
-<p>2.设定用户名称 <code>git config --global usename &quot;你的用户名&quot;</code>；用户名必须为英文，可以使用GitHub的用户名</p>
-<p>   设定用户邮箱 <code>git config --global user.email &quot;你的电子邮箱&quot;</code>；邮箱设定为常用的邮箱，可以正确手法邮件的邮箱</p>
-<h4 id="git的工作原理"><a href="#git的工作原理" class="headerlink" title="git的工作原理"></a>git的工作原理</h4><p>操作git必须严格按照以下操作步骤来进行操作</p>
-<p>1.设定一个需要git软件来管理的项目文件夹</p>
-<p>2.在这个目录下，鼠标右击，使用git bush here 运行程序，也可以直接在命令行操作，记得切换路径</p>
-<p>3.运行git init 格式化当前文件夹，运行之后，会得到一个.git文件，这个文件默认是隐藏的，可以通过文件设置让它显示，这个文件十分重要，不能删除</p>
-<p>项目问文件夹分为工作区 缓存区 历史区</p>
-<p>工作区：平时我们编辑的执行的文件，都在工作区中，是可见的，可以编辑操作</p>
-<p>缓存区：从工作区上传存储到缓存区，是不可见的，无法编辑操作，缓存区的内容可以回滚到工作区</p>
-<p>历史区：从缓存区上传存储到历史区是不可见的，历史区的文件生成历史版本，可以上传到GitHub上，历史区的内容可以回滚到工作区，GitHub中的内容可以下载到工作区继续编辑</p>
-<p>4.具体的执行命令</p>
-<p><code>git status</code>：查看缓存区中的文件</p>
-<p><code>git add 文件名</code>：上传一个文件到缓存区</p>
-<p><code>git add 文件夹名</code>：上传一个文件夹到缓存区</p>
-<p><code>git add .(英文的点)/git add --all</code> 添加项目文件夹中的所有内容到缓存区</p>
-<p><code>git commit -m &quot;注释内容&quot;</code>：将缓存区中的所有内容上传到历史区，生成历史版本</p>
-<p><code>git log</code>：查看历史版本 </p>
-<p>生成历史版本之后，当前缓存区中的所有内容会被全部释放，也就是缓存区中没有任何内容了</p>
-<h4 id="回滚操作"><a href="#回滚操作" class="headerlink" title="回滚操作"></a>回滚操作</h4><p>1.从缓存区回滚到工作区</p>
-<p><code>git reset HEAD --文件名</code>：文件回滚</p>
-<p><code>git reset HEAD --文件夹名</code>：文件夹回滚</p>
-<p><code>git reset HEAD --</code> .：所有文件回滚</p>
-<p>2.切换当前使用的历史版本</p>
-<p><code>git reset --hard 历史版本id</code> （commit之后的英文串就是id）</p>
-<p>3.历史版本一旦生成是无法删除的，新的历史版本是在之前历史版本的基础上生成的内容，如果删除了之前的历史版本，之后的内容也会受到影响，因此git的历史版本不允许删除！</p>
-<h4 id="使用GitHub进行云存储git项目文件"><a href="#使用GitHub进行云存储git项目文件" class="headerlink" title="使用GitHub进行云存储git项目文件"></a>使用GitHub进行云存储git项目文件</h4><p>在GitHub中新建库，通过本地git将历史版本存入GitHub仓库</p>
-<p>1.上传历史版本之前先要配置git上传信息</p>
-<p>通过<code>git remote add origin 仓库地址</code>设置项目文件存储在哪个库，在git文件夹config文件中，会显示设置的这个仓库地址，如果地址需要更换，可在文件里面直接修改，或者重新输入上面那行命令</p>
-<p>2.上传操作命令</p>
-<p><code>git push -u origin master</code> </p>
-<p>3.下载克隆操作</p>
-<p><code>git clone 仓库地址</code></p>
-<p><u>git项目的分支操作待更新中…….</u></p>
+            <h4 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h4><p>分支   将用户的提交和修改按照时间形成一条链叫做分支</p>
+<p><strong>总结git基本指令</strong></p>
+<p><code>git status</code>   查看当前仓库分支的一个基本状态</p>
+<p><code>git init</code>      在本地初始化一个仓库</p>
+<p><code>git add  &lt;file,dir&gt;</code>  将工作区的修改提交到暂存区</p>
+<p><code>git commit -m &#39;注释&#39;</code>  将暂存区的修改提交到分支</p>
+<p><code>git log</code>      打印提交记录</p>
+<p><code>git log --pretty=oneline</code>  在一行内打印提交记录</p>
+<p><code>git reflog</code>  打印所有的git操作记录</p>
+<p><code>git branch</code>    查看本地的所有分支</p>
+<p><code>git branch  -a</code>   产看本地和远程的所有分支</p>
+<p><code>git  checkout -b 分支名</code>   创建并且切换一个分支</p>
+<p><code>git checkout  分支名</code>  切换一个分支</p>
+<p><code>git merge 分支名(dev)</code>  在当前分支合并其他分支(dev)  子分支向母分支合并</p>
+<p><code>git  reset --hard  提交id</code>  版本的滚动 只能是被git管理的</p>
+<p><code>git diff</code>    查看暂存区和工作区的区别</p>
+<p><code>git clone url</code>   将远程的仓库克隆到本地<br><code>git push  origin（远程仓库名） master （分支名）</code>    上传远程仓库<br><code>git pull  origin 分支名</code>  （fecth + commit）拉取（下载）指定分支代码合并到当前分支<br><code>git fetch</code>   拉取代码<br><code>git remote add origin 仓库地址</code>  将本地仓库和远程从仓库建立连接</p>
+<p><code>git branch  -D 分支名</code>     删除本地分支</p>
+<h4 id="git的分支"><a href="#git的分支" class="headerlink" title="git的分支"></a>git的分支</h4><p>####gitflow git工作流</p>
+<p>git 的使用流程 更多是对分支的使用</p>
+<p>master 主分支  线上分支 和正在线上运行的代码是一致的<br>realease 分支  预发布分支 发布前的测试<br>dev    分支     开发分支<br>future 分支     个人分支 功能分支<br>bug    分支     线上代码出现bug的时候来解决bug</p>
+<h4 id="角色"><a href="#角色" class="headerlink" title="角色"></a>角色</h4><p><strong>主程</strong></p>
+<p>1.和远程仓库过关联</p>
+<p>2.搭建项目框架</p>
+<p>3.上传到远程的dev分支</p>
+<p>4.开发结束之后 将dev分支的代码 合并到master （预上线分支）</p>
+<p><strong>普通开发者</strong></p>
+<p>1.clone 代码</p>
+<p>2.从dev分支切换出个人分支</p>
+<p>3.在个人分支进行修改</p>
+<p>4.将个人分支合并到dev分支</p>
+<p>5.push dev分支  push 之前一定要先更新代码</p>
+<p>6.将个人分支删除调重新创建</p>
 
         </div>
 
@@ -261,7 +251,7 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2020-08-14T11:20:39.003Z" itemprop="dateUpdated">2020-08-14 19:20:39</time>
+    最后更新时间：<time datetime="2020-08-15T02:25:52.687Z" itemprop="dateUpdated">2020-08-15 10:25:52</time>
 </span><br>
 
 
@@ -287,7 +277,7 @@
 
         <div class="post-footer">
             
-	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git%E4%BB%8B%E7%BB%8D/" rel="tag">git介绍</a></li></ul>
+	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git%E5%88%86%E6%94%AF/" rel="tag">git分支</a></li></ul>
 
 
             
@@ -297,7 +287,7 @@
 <div class="page-share" id="pageShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://wjhzs.github.io/2020/07/23/git%E6%93%8D%E4%BD%9C/&title=《git操作》 — 魏经海个人博客&pic=https://wjhzs.github.io/img/wei.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://wjhzs.github.io/2020/08/15/git%E5%88%86%E6%94%AF%E6%93%8D%E4%BD%9C/&title=《git分支操作》 — 魏经海个人博客&pic=https://wjhzs.github.io/img/wei.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -307,23 +297,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://wjhzs.github.io/2020/07/23/git%E6%93%8D%E4%BD%9C/&title=《git操作》 — 魏经海个人博客&source=git介绍git是一款本地项目管理工具，git在使用时必须严格遵守项目git规范，否则会影响整个项目的进度和文件的整理保存。
-git官网：https://..." data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://wjhzs.github.io/2020/08/15/git%E5%88%86%E6%94%AF%E6%93%8D%E4%BD%9C/&title=《git分支操作》 — 魏经海个人博客&source=学习心得、资源分享、前端知识总结" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://wjhzs.github.io/2020/07/23/git%E6%93%8D%E4%BD%9C/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://wjhzs.github.io/2020/08/15/git%E5%88%86%E6%94%AF%E6%93%8D%E4%BD%9C/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《git操作》 — 魏经海个人博客&url=https://wjhzs.github.io/2020/07/23/git%E6%93%8D%E4%BD%9C/&via=https://wjhzs.github.io" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《git分支操作》 — 魏经海个人博客&url=https://wjhzs.github.io/2020/08/15/git%E5%88%86%E6%94%AF%E6%93%8D%E4%BD%9C/&via=https://wjhzs.github.io" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://wjhzs.github.io/2020/07/23/git%E6%93%8D%E4%BD%9C/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://wjhzs.github.io/2020/08/15/git%E5%88%86%E6%94%AF%E6%93%8D%E4%BD%9C/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -343,21 +332,14 @@ git官网：https://..." data-title=" QQ">
     </div>
 
     
-<nav class="post-nav flex-row flex-justify-between">
-  
-    <div class="waves-block waves-effect prev">
-      <a href="/2020/07/23/HTML/" id="post-prev" class="post-nav-link">
-        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
-        <h4 class="title">HTML</h4>
-      </a>
-    </div>
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
   
 
   
     <div class="waves-block waves-effect next">
-      <a href="/2020/07/23/Node-js/" id="post-next" class="post-nav-link">
+      <a href="/2020/08/10/Vue%E5%85%A8%E5%B1%80%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86/" id="post-next" class="post-nav-link">
         <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
-        <h4 class="title">Node.js</h4>
+        <h4 class="title">Vue全局状态管理</h4>
       </a>
     </div>
   
@@ -479,7 +461,7 @@ git官网：https://..." data-title=" QQ">
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://wjhzs.github.io/2020/07/23/git%E6%93%8D%E4%BD%9C/&title=《git操作》 — 魏经海个人博客&pic=https://wjhzs.github.io/img/wei.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://wjhzs.github.io/2020/08/15/git%E5%88%86%E6%94%AF%E6%93%8D%E4%BD%9C/&title=《git分支操作》 — 魏经海个人博客&pic=https://wjhzs.github.io/img/wei.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -489,23 +471,22 @@ git官网：https://..." data-title=" QQ">
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://wjhzs.github.io/2020/07/23/git%E6%93%8D%E4%BD%9C/&title=《git操作》 — 魏经海个人博客&source=git介绍git是一款本地项目管理工具，git在使用时必须严格遵守项目git规范，否则会影响整个项目的进度和文件的整理保存。
-git官网：https://..." data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://wjhzs.github.io/2020/08/15/git%E5%88%86%E6%94%AF%E6%93%8D%E4%BD%9C/&title=《git分支操作》 — 魏经海个人博客&source=学习心得、资源分享、前端知识总结" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://wjhzs.github.io/2020/07/23/git%E6%93%8D%E4%BD%9C/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://wjhzs.github.io/2020/08/15/git%E5%88%86%E6%94%AF%E6%93%8D%E4%BD%9C/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《git操作》 — 魏经海个人博客&url=https://wjhzs.github.io/2020/07/23/git%E6%93%8D%E4%BD%9C/&via=https://wjhzs.github.io" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《git分支操作》 — 魏经海个人博客&url=https://wjhzs.github.io/2020/08/15/git%E5%88%86%E6%94%AF%E6%93%8D%E4%BD%9C/&via=https://wjhzs.github.io" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://wjhzs.github.io/2020/07/23/git%E6%93%8D%E4%BD%9C/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://wjhzs.github.io/2020/08/15/git%E5%88%86%E6%94%AF%E6%93%8D%E4%BD%9C/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -516,7 +497,7 @@ git官网：https://..." data-title=" QQ">
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
-    <img src="//api.qrserver.com/v1/create-qr-code/?data=https://wjhzs.github.io/2020/07/23/git%E6%93%8D%E4%BD%9C/" alt="微信分享二维码">
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=https://wjhzs.github.io/2020/08/15/git%E5%88%86%E6%94%AF%E6%93%8D%E4%BD%9C/" alt="微信分享二维码">
 </div>
 
 
