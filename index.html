@@ -204,40 +204,10 @@
     <div class="post-content" id="post-content" itemprop="postContent">
 
     
-        <h4 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h4><p>分支   将用户的提交和修改按照时间形成一条链叫做分支</p>
+        <p>分支   将用户的提交和修改按照时间形成一条链叫做分支</p>
 <p><strong>总结git基本指令</strong></p>
 <p><code>git status</code>   查看当前仓库分支的一个基本状态</p>
 <p><code>git init</code>      在本地初始化一个仓库</p>
-<p><code>git add  &lt;file,dir&gt;</code>  将工作区的修改提交到暂存区</p>
-<p><code>git commit -m &#39;注释&#39;</code>  将暂存区的修改提交到分支</p>
-<p><code>git log</code>      打印提交记录</p>
-<p><code>git log --pretty=oneline</code>  在一行内打印提交记录</p>
-<p><code>git reflog</code>  打印所有的git操作记录</p>
-<p><code>git branch</code>    查看本地的所有分支</p>
-<p><code>git branch  -a</code>   产看本地和远程的所有分支</p>
-<p><code>git  checkout -b 分支名</code>   创建并且切换一个分支</p>
-<p><code>git checkout  分支名</code>  切换一个分支</p>
-<p><code>git merge 分支名(dev)</code>  在当前分支合并其他分支(dev)  子分支向母分支合并</p>
-<p><code>git  reset --hard  提交id</code>  版本的滚动 只能是被git管理的</p>
-<p><code>git diff</code>    查看暂存区和工作区的区别</p>
-<p><code>git clone url</code>   将远程的仓库克隆到本地<br><code>git push  origin（远程仓库名） master （分支名）</code>    上传远程仓库<br><code>git pull  origin 分支名</code>  （fecth + commit）拉取（下载）指定分支代码合并到当前分支<br><code>git fetch</code>   拉取代码<br><code>git remote add origin 仓库地址</code>  将本地仓库和远程从仓库建立连接</p>
-<p><code>git branch  -D 分支名</code>     删除本地分支</p>
-<h4 id="git的分支"><a href="#git的分支" class="headerlink" title="git的分支"></a>git的分支</h4><p>####gitflow git工作流</p>
-<p>git 的使用流程 更多是对分支的使用</p>
-<p>master 主分支  线上分支 和正在线上运行的代码是一致的<br>realease 分支  预发布分支 发布前的测试<br>dev    分支     开发分支<br>future 分支     个人分支 功能分支<br>bug    分支     线上代码出现bug的时候来解决bug</p>
-<h4 id="角色"><a href="#角色" class="headerlink" title="角色"></a>角色</h4><p><strong>主程</strong></p>
-<p>1.和远程仓库过关联</p>
-<p>2.搭建项目框架</p>
-<p>3.上传到远程的dev分支</p>
-<p>4.开发结束之后 将dev分支的代码 合并到master （预上线分支）</p>
-<p><strong>普通开发者</strong></p>
-<p>1.clone 代码</p>
-<p>2.从dev分支切换出个人分支</p>
-<p>3.在个人分支进行修改</p>
-<p>4.将个人分支合并到dev分支</p>
-<p>5.push dev分支  push 之前一定要先更新代码</p>
-<p>6.将个人分支删除调重新创建</p>
-
     
 
         <a href="/2020/08/15/git%E5%88%86%E6%94%AF%E6%93%8D%E4%BD%9C/" class="post-more waves-effect waves-button">
