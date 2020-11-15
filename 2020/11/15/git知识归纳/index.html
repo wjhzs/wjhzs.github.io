@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+<!-- Baidu Tongji -->
+<script>var _hmt = _hmt || []</script>
+<script async src="//hm.baidu.com/hm.js?37b2fdbca88b21a6b1cfd1734d3dd32a"></script>
+<!-- End Baidu Tongji -->
+
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>git知识归纳 | 魏经海个人博客 | Welcome</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="">
+    <meta name="description" content="git相关的名词解析git&#x2F;svn 团队的代码管理工具 git是分布式 svn集中式git 里包含本地仓库 和远程仓库github&#x2F;gitee  一大波远程仓库的集合体">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git知识归纳">
+<meta property="og:url" content="https://wjhzs.github.io/2020/11/15/git%E7%9F%A5%E8%AF%86%E5%BD%92%E7%BA%B3/index.html">
+<meta property="og:site_name" content="魏经海个人博客">
+<meta property="og:description" content="git相关的名词解析git&#x2F;svn 团队的代码管理工具 git是分布式 svn集中式git 里包含本地仓库 和远程仓库github&#x2F;gitee  一大波远程仓库的集合体">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-11-15T13:50:42.000Z">
+<meta property="article:modified_time" content="2020-11-15T14:20:07.316Z">
+<meta property="article:author" content="魏经海">
+<meta property="article:tag" content="魏经海个人博客、前端、前端学习、前端资源">
+<meta name="twitter:card" content="summary">
+    
+    <link rel="shortcut icon" href="/img/mine.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/bg.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/wei.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">魏经海</h5>
+          <a href="mailto:wjhkyl@icloud.com" title="wjhkyl@icloud.com" class="mail">wjhkyl@icloud.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                全部
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                分类
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/wjhzs" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://weibo.com/5450533800/" target="_blank" >
+                <i class="icon icon-lg icon-weibo"></i>
+                Weibo
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="http://wpa.qq.com/msgrd?v=3&uin=1057838724&site=qq&menu=yes" target="_blank" >
+                <i class="icon icon-lg icon-qq"></i>
+                Qq
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/custom"  >
+                <i class="icon icon-lg icon-link"></i>
+                友链
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">git知识归纳</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">git知识归纳</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2020-11-15T13:50:42.000Z" itemprop="datePublished" class="page-time">
+  2020-11-15
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/git/">git</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#git相关的名词解析"><span class="post-toc-number">1.</span> <span class="post-toc-text">git相关的名词解析</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#基本指令"><span class="post-toc-number">2.</span> <span class="post-toc-text">基本指令</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#冲突"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">冲突</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#git仓库-本地仓库-远程仓库"><span class="post-toc-number">3.</span> <span class="post-toc-text">git仓库 本地仓库 远程仓库</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#git的分支"><span class="post-toc-number">4.</span> <span class="post-toc-text">git的分支</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#gitflow-git工作流"><span class="post-toc-number">5.</span> <span class="post-toc-text">gitflow git工作流</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#角色"><span class="post-toc-number">5.1.</span> <span class="post-toc-text">角色</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-git知识归纳"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">git知识归纳</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2020-11-15 21:50:42" datetime="2020-11-15T13:50:42.000Z"  itemprop="datePublished">2020-11-15</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/git/">git</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h3 id="git相关的名词解析"><a href="#git相关的名词解析" class="headerlink" title="git相关的名词解析"></a>git相关的名词解析</h3><p>git/svn 团队的代码管理工具 git是分布式 svn集中式<br>git 里包含本地仓库 和远程仓库<br>github/gitee  一大波远程仓库的集合体</p>
+<a id="more"></a>
+
+<p>git远程仓库   团队使用在服务器的仓库<br>git的本地仓库  本地创建随便使用<br>gui 可视化工具 gitDesktop sourceTree conrestone vscode<br>.git 隐藏文件 表示git的仓库<br>工作区 可以可到的写代码的地方叫工作区<br>暂存区 在git的仓库我们是看不到的用来暂时保存呢提交的修改<br>分支   将用户的提交和修改按照时间形成一条链叫做分支<br>版本合并<br>版本冲突<br>版本提交</p>
+<h3 id="基本指令"><a href="#基本指令" class="headerlink" title="基本指令"></a>基本指令</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">git status  &#x2F;&#x2F; 查看当前仓库分支的一个基本状态</span><br><span class="line"></span><br><span class="line">git init    &#x2F;&#x2F;  在本地初始化一个仓库</span><br><span class="line"></span><br><span class="line">git add  &lt;file,dir&gt;  &#x2F;&#x2F;将工作区的修改提交到暂存区</span><br><span class="line"> </span><br><span class="line">git commit -m &#39;注释&#39;  &#x2F;&#x2F;将暂存区的修改提交到分支</span><br><span class="line"></span><br><span class="line">git log      &#x2F;&#x2F; 打印提交记录</span><br><span class="line"></span><br><span class="line">git log --pretty&#x3D;oneline  &#x2F;&#x2F;在一行内打印提交记录</span><br><span class="line"></span><br><span class="line">git reflog  &#x2F;&#x2F;打印所有的git操作记录</span><br><span class="line"> </span><br><span class="line">git branch    &#x2F;&#x2F;查看本地的所有分支</span><br><span class="line"></span><br><span class="line">git branch  -a &#x2F;&#x2F;产看本地和远程的所有分支</span><br><span class="line"></span><br><span class="line">git  checkout -b 分支名   &#x2F;&#x2F;创建并且切换一个分支</span><br><span class="line"></span><br><span class="line">git checkout  分支名  &#x2F;&#x2F;切换一个分支</span><br><span class="line"></span><br><span class="line">git merge 分支名(dev)  &#x2F;&#x2F;在当前分支合并其他分支(dev)  子分支向母分支合并</span><br><span class="line"></span><br><span class="line">git  reset --hard  提交id  &#x2F;&#x2F;版本的滚动 只能是被git管理的</span><br><span class="line"></span><br><span class="line">git diff    &#x2F;&#x2F;查看暂存区和工作区的区别</span><br><span class="line"></span><br><span class="line">git clone url  &#x2F;&#x2F; 将远程的仓库克隆到本地</span><br><span class="line">git push  origin（远程仓库名） master （分支名）</span><br><span class="line">git pull  origin 分支名  （fecth + commit）拉取（下载）指定分支代码合并到当前分支</span><br><span class="line">git fetch   拉取代码</span><br><span class="line">git remote add origin url  将本地仓库和远程从仓库建立连接</span><br><span class="line"></span><br><span class="line">git branch  -D 分支名删除本地分支</span><br></pre></td></tr></table></figure>
+
+<h4 id="冲突"><a href="#冲突" class="headerlink" title="冲突"></a>冲突</h4><p>需要的留着 不需要的删除 -&gt; 良好的交流</p>
+<h3 id="git仓库-本地仓库-远程仓库"><a href="#git仓库-本地仓库-远程仓库" class="headerlink" title="git仓库 本地仓库 远程仓库"></a>git仓库 本地仓库 远程仓库</h3><p>本地仓库和远程仓库都是仓库 该有的都有<br>本地仓库 ：本地分支 （本地工作区  本地暂存区）<br>远程仓库 ：远程分支  （远程工作区 远程暂存区）</p>
+<ol>
+<li><p>远程仓库的创建 gitee github 自己在服务器上搭建远程仓库</p>
+<ul>
+<li>已经存在一个远程仓库了 通过readme文件自动创建的 也可能是别人创建<br>git clone + 地址  将远程仓库克隆到本地</li>
+<li>没有远程仓库</li>
+</ul>
+<ol>
+<li>本地通过git init 创建一个远程仓库 </li>
+<li>git remote add origin + 地址 和远程仓库做关联 </li>
+</ol>
+</li>
+</ol>
+<h3 id="git的分支"><a href="#git的分支" class="headerlink" title="git的分支"></a>git的分支</h3><h3 id="gitflow-git工作流"><a href="#gitflow-git工作流" class="headerlink" title="gitflow git工作流"></a>gitflow git工作流</h3><p>git 的使用流程 更多是对分支的使用</p>
+<p>master 主分支  线上分支 和正在线上运行的代码是一致的<br>realease 分支  预发布分支 发布前的测试<br>dev    分支     开发分支<br>futrue 分支     个人分支 功能分支<br>bug    分支     线上代码出现bug的时候来解决bug</p>
+<h4 id="角色"><a href="#角色" class="headerlink" title="角色"></a>角色</h4><p>主程</p>
+<ol>
+<li>和远程仓库过关联</li>
+<li>搭建项目框架</li>
+<li>上传到远程的dev分支</li>
+<li>开发结束之后 将dev分支的代码 合并到master （预上线分支）<br>普通开发者</li>
+<li>clone 代码</li>
+<li>从dev分支切换出个人分支</li>
+<li>在个人分支进行修改</li>
+<li>将个人分支合并到dev分支</li>
+<li>push dev分支  push 之前一定要先更新代码</li>
+<li>将个人分支删除调重新创建</li>
+</ol>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2020-11-15T14:20:07.316Z" itemprop="dateUpdated">2020-11-15 22:20:07</time>
+</span><br>
+
+
+        
+        喜欢就分享吧...
+        
+    </div>
+    
+    <footer>
+        <a href="https://wjhzs.github.io">
+            <img src="/img/wei.jpg" alt="魏经海">
+            魏经海
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://wjhzs.github.io/2020/11/15/git%E7%9F%A5%E8%AF%86%E5%BD%92%E7%BA%B3/&title=《git知识归纳》 — 魏经海个人博客&pic=https://wjhzs.github.io/img/wei.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://wjhzs.github.io/2020/11/15/git%E7%9F%A5%E8%AF%86%E5%BD%92%E7%BA%B3/&title=《git知识归纳》 — 魏经海个人博客&source=git相关的名词解析git/svn 团队的代码管理工具 git是分布式 svn集中式git 里包含本地仓库 和远程仓库github/gitee  一大波远..." data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://wjhzs.github.io/2020/11/15/git%E7%9F%A5%E8%AF%86%E5%BD%92%E7%BA%B3/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《git知识归纳》 — 魏经海个人博客&url=https://wjhzs.github.io/2020/11/15/git%E7%9F%A5%E8%AF%86%E5%BD%92%E7%BA%B3/&via=https://wjhzs.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://wjhzs.github.io/2020/11/15/git%E7%9F%A5%E8%AF%86%E5%BD%92%E7%BA%B3/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2020/11/15/vue%E7%9F%A5%E8%AF%86%E5%BD%92%E7%BA%B3/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">vue知识归纳</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Valine Comments -->
+    <div class="comments vcomment" id="comments"></div>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+    <!-- Valine Comments script -->
+    <script>
+        var GUEST_INFO = ['nick','mail','link'];
+        var guest_info = 'nick,mail'.split(',').filter(function(item){
+          return GUEST_INFO.indexOf(item) > -1
+        });
+        new Valine({
+            el: '#comments',
+            notify: 'false' == 'true',
+            verify: 'false' == 'true',
+            appId: "AXjHFSVlMh0zthHW81LyHqx8-gzGzoHsz",
+            appKey: "LvuhcfNM7BM9OQQFyIUU6ksn",
+            avatar: "mm",
+            placeholder: "来了就说两句吧",
+            guest_info: guest_info.length == 0 ? GUEST_INFO : guest_info,
+            pageSize: "10"
+        })
+    </script>
+    <!-- Valine Comments end -->
+
+
+
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        谢主浓恩~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/wechat.png" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check"
+                data-wechat="/img/wechat.png" data-alipay="/img/alipay.png">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechat">微信</span>
+                <span class="reward-toggle-label"></span>
+                <span class="reward-toggle-item alipay">支付宝</span>
+            </div>
+        </label>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+            <span>博客内容遵循 <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>魏经海 &copy; 2020</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://wjhzs.github.io/2020/11/15/git%E7%9F%A5%E8%AF%86%E5%BD%92%E7%BA%B3/&title=《git知识归纳》 — 魏经海个人博客&pic=https://wjhzs.github.io/img/wei.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://wjhzs.github.io/2020/11/15/git%E7%9F%A5%E8%AF%86%E5%BD%92%E7%BA%B3/&title=《git知识归纳》 — 魏经海个人博客&source=git相关的名词解析git/svn 团队的代码管理工具 git是分布式 svn集中式git 里包含本地仓库 和远程仓库github/gitee  一大波远..." data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://wjhzs.github.io/2020/11/15/git%E7%9F%A5%E8%AF%86%E5%BD%92%E7%BA%B3/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《git知识归纳》 — 魏经海个人博客&url=https://wjhzs.github.io/2020/11/15/git%E7%9F%A5%E8%AF%86%E5%BD%92%E7%BA%B3/&via=https://wjhzs.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://wjhzs.github.io/2020/11/15/git%E7%9F%A5%E8%AF%86%E5%BD%92%E7%BA%B3/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=https://wjhzs.github.io/2020/11/15/git%E7%9F%A5%E8%AF%86%E5%BD%92%E7%BA%B3/" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = 'Waiting for you';
+            clearTimeout(titleTime);
+        } else {
+            document.title = 'Welcome~';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>

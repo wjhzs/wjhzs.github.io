@@ -176,6 +176,53 @@
     <ul class="post-list">
     
         <li class="post-list-item fade">
+            <article id="post-JavaScript"
+  class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2020-07-23 10:47:34" datetime="2020-07-23T02:47:34.000Z"  itemprop="datePublished">2020-07-23</time>
+
+        
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/JavaScript/">JavaScript</a></li></ul>
+
+
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2020/07/23/JavaScript/">JavaScript</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        
+    
+
+        <a href="/2020/07/23/JavaScript/" class="post-more waves-effect waves-button">
+            阅读全文…
+        </a>
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript%E4%BB%8B%E7%BB%8D/" rel="tag">JavaScript介绍</a></li></ul>
+
+    </div>
+    
+</article>
+
+        </li>
+    
+        <li class="post-list-item fade">
             <article id="post-CSS"
   class="article-card article-type-post" itemprop="blogPost">
 
@@ -298,7 +345,584 @@
     <div class="post-content" id="post-content" itemprop="postContent">
 
     
-        
+        <p>Node课程笔记</p>
+<h2 id="Node-简介"><a href="#Node-简介" class="headerlink" title="Node 简介"></a>Node 简介</h2><h3 id="客户端的JavaScript是怎样的"><a href="#客户端的JavaScript是怎样的" class="headerlink" title="客户端的JavaScript是怎样的"></a>客户端的JavaScript是怎样的</h3><ul>
+<li><p>什么是 JavaScript？<br>+是一个脚本语言<br>+运行在浏览器（浏览器的js解析内核  v8）<br>+实现用户的交互 （interactive）</p>
+<ul>
+<li>变量  赋值   循环 逻辑 判断 分支 对象   函数。。。。</li>
+<li>dom 操作</li>
+<li>bom 操作</li>
+<li>ajax </li>
+</ul>
+</li>
+<li><p>JavaScript 的运行环境？<br>+浏览器内核解析内核   es6  </p>
+</li>
+<li><p>浏览器中的 JavaScript 可以做什么？</p>
+</li>
+<li><p>浏览器中的 JavaScript 不可以做什么？（不安全）<br>+访问数据库<br>+不能对文件进行操作<br>+对os 进行操作<br>+原因 是不安全  和浏览器运行机制有关</p>
+</li>
+<li><p>在开发人员能力相同的情况下编程语言的能力取决于什么？</p>
+<p>+cordova hbuilder    平台  platform<br>+java   java虚拟机        （运行平台）<br>+php    php虚拟机<br>+c#     .net framework   mono<br>+js     解析内核  chrome v8 </p>
+</li>
+<li><p>JavaScript 只可以运行在浏览器中吗？<br>+不是</p>
+</li>
+</ul>
+<h3 id="为什么是JavaScript"><a href="#为什么是JavaScript" class="headerlink" title="为什么是JavaScript"></a>为什么是JavaScript</h3><ul>
+<li>node js 不是因为js 产生的</li>
+<li>node 选择了js</li>
+<li>Ryan dahl</li>
+<li>2009  2 月份 node有想法</li>
+<li>2009  5 月份 githup 开源</li>
+<li>2009  11月份  jsconf  讲解推广node</li>
+<li>2010年底    被xxx公司收购</li>
+<li>2018  发布有重大bug</li>
+<li>npm </li>
+<li>githup 世界上最大的同性交友网站   码云  </li>
+</ul>
+<h3 id="what-is-node-？"><a href="#what-is-node-？" class="headerlink" title="what is node ？"></a>what is node ？</h3><ul>
+<li>Node.js 是一个基于Chrome V8 引擎的JavaScript运行环境</li>
+<li>Node.js使用了一个事件驱动、非阻塞式I/O的模型,使其轻量又高效</li>
+<li>Node.js的包管理工具npm,是全球最大的开源库生态系统</li>
+<li>官网 <a href="http://nodejs.cn/" target="_blank" rel="noopener">http://nodejs.cn/</a></li>
+<li>npm  插件官网：<a href="https://www.npmjs.com/" target="_blank" rel="noopener">https://www.npmjs.com/</a></li>
+</ul>
+<h2 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h2><h3 id="Node的安装"><a href="#Node的安装" class="headerlink" title="Node的安装"></a>Node的安装</h3><ul>
+<li><p>安装包安装</p>
+<ul>
+<li>官网下载对应的安装包</li>
+<li>一路next</li>
+</ul>
+</li>
+<li><p>nvm安装(有一个类似的工具：n)</p>
+<ul>
+<li><p>Node Version Manager（Node版本管理工具）</p>
+</li>
+<li><p>由于以后的开发工作可能会在多个Node版本中测试，而且Node的版本也比较多，所以需要这么款工具来管理</p>
+</li>
+<li><p><a href="https://github.com/coreybutler/nvm-windows/releases" target="_blank" rel="noopener">下载地址</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">基本命令</span><br><span class="line">nvm -v 查看版本号</span><br><span class="line">nvm list 查看列表</span><br><span class="line">nvm install 版本号  安装node</span><br><span class="line">nvm uninstall 版本号  卸载node</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="相关版本"><a href="#相关版本" class="headerlink" title="相关版本"></a>相关版本</h3><ul>
+<li>node版本常识  <ul>
+<li>偶数版本为稳定版  （0.6.x ，0.8.x ，0.10.x）</li>
+<li>奇数版本为非稳定版（0.7.x ，0.9.x ，0.11.x）</li>
+<li>LTS（Long Term Support）</li>
+<li><a href="https://blog.csdn.net/u012532033/article/details/73332099" target="_blank" rel="noopener">LTS和Current区别</a></li>
+</ul>
+</li>
+<li>操作方式：<ul>
+<li>重新下载最新的安装包；</li>
+<li>覆盖安装即可；</li>
+</ul>
+</li>
+<li>问题：<ul>
+<li>以前版本安装的很多全局的工具包需要重新安装</li>
+<li>无法回滚到之前的版本</li>
+<li>无法在多个版本之间切换（很多时候我们要使用特定版本）</li>
+</ul>
+</li>
+</ul>
+<h3 id="Windows下常用的命令行操作"><a href="#Windows下常用的命令行操作" class="headerlink" title="Windows下常用的命令行操作"></a>Windows下常用的命令行操作</h3><ul>
+<li>切换当前目录（change directory）：cd</li>
+<li>创建目录（make directory）：mkdir</li>
+<li>查看当前目录列表（directory）：dir<ul>
+<li>别名：ls（list）</li>
+</ul>
+</li>
+<li>清空当前控制台：cls<ul>
+<li>别名：clear</li>
+</ul>
+</li>
+<li>删除文件：del<ul>
+<li>别名：rm</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>注意：所有别名必须在新版本的 PowerShell （linux系统）中使用</p>
+</blockquote>
+<h3 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h3><ul>
+<li><p>Python环境丢失</p>
+</li>
+<li><p>Node中有些第三方的包是以C/C++源码的方式发布的，需要安装后编译,确保全局环境中可以使用python命令,python 版本推荐2.7.0</p>
+</li>
+<li><p>环境变量丢失</p>
+</li>
+<li><p>部分电脑安装完毕之后没有环境变量需要手动配置</p>
+</li>
+<li><p>Windows中环境变量分为系统变量和用户变量</p>
+</li>
+<li><p>环境变量的变量名是不区分大小写的</p>
+</li>
+<li><p>PATH 变量：只要添加到 PATH 变量中的路径，都可以在任何目录下</p>
+</li>
+<li><p>目的可以在任何地方调起node命令</p>
+</li>
+</ul>
+<blockquote>
+</blockquote>
+<h2 id="模块-包-commonjs"><a href="#模块-包-commonjs" class="headerlink" title="模块,包 commonjs"></a>模块,包 commonjs</h2><h3 id="commonjs规范"><a href="#commonjs规范" class="headerlink" title="commonjs规范"></a>commonjs规范</h3><p>前端模块化：AMD,CMD,Commonjs</p>
+<p>Node 应用由模块组成，采用 CommonJS 模块规范。</p>
+<h5 id="定义module"><a href="#定义module" class="headerlink" title="定义module"></a>定义module</h5><p>每个文件就是一个模块，有自己的作用域。在一个文件里面定义的变量、函数、类，都是私有的，对其他文件不可见。</p>
+<h5 id="暴露接口"><a href="#暴露接口" class="headerlink" title="暴露接口"></a>暴露接口</h5><p> CommonJS规范规定，每个模块内部，module变量代表当前模块。这个变量是一个对象，它的exports属性（即module.exports）是对外的接口。加载某个模块，其实是加载该模块的module.exports属性。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">	<span class="keyword">var</span> x = <span class="number">5</span>;</span><br><span class="line"><span class="keyword">var</span> addX = <span class="function"><span class="keyword">function</span> (<span class="params">value</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> value + x;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="built_in">module</span>.exports.x = x;</span><br><span class="line"><span class="built_in">module</span>.exports.addX = addX;</span><br></pre></td></tr></table></figure>
+
+<h5 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h5><p> require方法用于加载模块。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">	var example &#x3D; require(&#39;.&#x2F;example.js&#39;);</span><br><span class="line">console.log(example.x); &#x2F;&#x2F; 5</span><br><span class="line">console.log(example.addX(1)); &#x2F;&#x2F; 6</span><br></pre></td></tr></table></figure>
+
+<h3 id="模块的分类"><a href="#模块的分类" class="headerlink" title="模块的分类"></a>模块的分类</h3><ul>
+<li>内置模块</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">const process &#x3D; require(&#39;process&#39;)</span><br><span class="line">const path &#x3D; require(&#39;path&#39;)</span><br><span class="line">console.log(process.version)</span><br><span class="line">console.log(path.resolve(&#39;..&#x2F;&#39;))</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>第三方模块</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">   const request&#x3D;require(&quot;request&quot;);</span><br><span class="line">console.log(request)</span><br><span class="line">request.get(&#39;http:&#x2F;&#x2F;api.douban.com&#x2F;v2&#x2F;movie&#x2F;in_theaters&#39;, (err, response, body) &#x3D;&gt; &#123;</span><br><span class="line">  if (!err) &#123;</span><br><span class="line">    &#x2F;&#x2F; console.log(body);</span><br><span class="line">    console.log(JSON.parse(body))</span><br><span class="line">  &#125; else &#123;</span><br><span class="line">    console.log(err);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>自定义模块</li>
+</ul>
+<h3 id="npm-使用入门"><a href="#npm-使用入门" class="headerlink" title="npm 使用入门"></a>npm 使用入门</h3><p> 官网:<a href="https://www.npmjs.com/" target="_blank" rel="noopener">https://www.npmjs.com/</a></p>
+<p> 安装：无需安装</p>
+<p> 查看当前版本：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm -v</span><br></pre></td></tr></table></figure>
+
+<p> 更新：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install npm@latest -g</span><br></pre></td></tr></table></figure>
+
+<p> 初始化工程</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ npm init</span><br><span class="line"></span><br><span class="line">$ npm init --yes 默认配置</span><br></pre></td></tr></table></figure>
+
+<p> 安装包</p>
+<p> 使用npm install会读取package.json文件来安装模块。安装的模块分为两类<br> dependencies和devDependencies，分别对应生产环境需要的安装包和开发环境需要的安装包。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ npm install</span><br><span class="line"></span><br><span class="line">$ npm install &lt;package_name&gt; </span><br><span class="line"></span><br><span class="line">$ npm install &lt;package_name&gt; --save</span><br><span class="line"></span><br><span class="line">$ npm install &lt;package_name&gt; --save-dev</span><br></pre></td></tr></table></figure>
+
+<p> 更新模块</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm update</span><br></pre></td></tr></table></figure>
+
+<p> 卸载模块</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ npm uninstall &lt;package_name&gt;</span><br><span class="line"></span><br><span class="line">$ npm uninstall --save lodash</span><br></pre></td></tr></table></figure>
+
+<p>配置npm源</p>
+<ul>
+<li><p>临时使用, 安装包的时候通过–registry参数即可</p>
+<p>$ npm install express –registry <a href="https://registry.npm.taobao.org" target="_blank" rel="noopener">https://registry.npm.taobao.org</a></p>
+</li>
+<li><p>全局使用</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ npm config set registry https:&#x2F;&#x2F;registry.npm.taobao.org</span><br><span class="line">&#x2F;&#x2F; 配置后可通过下面方式来验证是否成功</span><br><span class="line">npm config get registry</span><br><span class="line">&#x2F;&#x2F; 或</span><br><span class="line">npm info express</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>cnpm 使用</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 安装cnpm</span><br><span class="line"> npm install -g cnpm --registry&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.org</span><br><span class="line">  </span><br><span class="line"> &#x2F;&#x2F; 使用cnpm安装包</span><br><span class="line"> cnpm install express</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<blockquote>
+</blockquote>
+<h3 id="常用的内置模块"><a href="#常用的内置模块" class="headerlink" title="常用的内置模块"></a>常用的内置模块</h3><p>node 常用内置api  </p>
+<p>(1) URL 网址解析<br>    解析URL相关网址信息<br>    url.parse(urlString[, parseQueryString[, slashesDenoteHost]])<br>    url.format(urlObject)<br>    url.resolve(from, to)<br>(2) QueryString 参数处理<br>    querystring.escape(str)<br>    querystring.unescape(str)<br>    querystring.parse(str[, sep[, eq[, options]]])<br>    querystring.stringify(obj[, sep[, eq[, options]]])<br>(3) HTTP 模块概要<br>    http.createServer([options][, requestListener])<br>    http.get(options[, callback])<br>    简易的爬虫<br>    代理跨域处理<br>(4) 事件 events 模块<br>(5) 文件fs模块<br>    打印目录树<br>(6) Stream 流模块<br>    歌词播放<br>    音乐下载<br>(8) request 方法</p>
+<p>2、Node.js 基础应用<br>1、应用 HTTP 模块编写一个小爬虫工具<br>(1) 利用爬虫获取“拉勾网”首页列表数据<br>(2) 通过 npm 安装 cheerio 模块获得数据<br>2、后端表单的提交<br>要求:<br>(1) 应用 request post 模拟提交表单</p>
+<h3 id="文件读取"><a href="#文件读取" class="headerlink" title="文件读取"></a>文件读取</h3><p>Node中文件读取的方式主要有：</p>
+<blockquote>
+<p>fs.readFile(file[, options], callback(error, data))</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">fs.readFile(<span class="string">'c:\\demo\1.txt'</span>, <span class="string">'utf8'</span>, (err, data) =&gt; &#123;</span><br><span class="line">  <span class="keyword">if</span> (err) <span class="keyword">throw</span> err;</span><br><span class="line">  <span class="built_in">console</span>.log(data);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>fs.readFileSync(file[, options])</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">  <span class="keyword">const</span> data = fs.readFileSync(<span class="string">'c:\\demo\1.txt'</span>, <span class="string">'utf8'</span>);</span><br><span class="line">  <span class="built_in">console</span>.log(data);</span><br><span class="line">&#125; <span class="keyword">catch</span>(e) &#123;</span><br><span class="line">  <span class="comment">// 文件不存在，或者权限错误</span></span><br><span class="line">  <span class="keyword">throw</span> e;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>fs.createReadStream(path[, options])</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> stream = fs.createReadStream(<span class="string">'c:\\demo\1.txt'</span>);</span><br><span class="line"><span class="keyword">let</span> data = <span class="string">''</span></span><br><span class="line">stream.on(<span class="string">'data'</span>, (trunk) =&gt; &#123;</span><br><span class="line">  data += trunk;</span><br><span class="line">&#125;);</span><br><span class="line">stream.on(<span class="string">'end'</span>, () =&gt; &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(data);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><em>由于Windows平台下默认文件编码是GBK，在Node中不支持，可以通过<a href="https://github.com/ashtuchkin/iconv-lite" target="_blank" rel="noopener">iconv-lite</a>解决</em></p>
+</blockquote>
+<h3 id="Readline模块逐行读取文本内容"><a href="#Readline模块逐行读取文本内容" class="headerlink" title="Readline模块逐行读取文本内容"></a>Readline模块逐行读取文本内容</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> readline = <span class="built_in">require</span>(<span class="string">'readline'</span>);</span><br><span class="line"><span class="keyword">const</span> fs = <span class="built_in">require</span>(<span class="string">'fs'</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> rl = readline.createInterface(&#123;</span><br><span class="line">  input: fs.createReadStream(<span class="string">'sample.txt'</span>)</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">rl.on(<span class="string">'line'</span>, (line) =&gt; &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'Line from file:'</span>, line);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<h3 id="文件写入"><a href="#文件写入" class="headerlink" title="文件写入"></a>文件写入</h3><p>Node中文件写入的方式主要有：</p>
+<blockquote>
+<p>fs.writeFile(file, data[, options], callback(error))</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">fs.writeFile(<span class="string">'c:\\demo\a.txt'</span>, <span class="keyword">new</span> <span class="built_in">Date</span>(), (error) =&gt; &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(error);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>fs.writeFileSync(file, data[, options])</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">  fs.writeFileSync(<span class="string">'c:\\demo\a.txt'</span>, <span class="keyword">new</span> <span class="built_in">Date</span>());</span><br><span class="line">&#125; <span class="keyword">catch</span> (error) &#123;</span><br><span class="line">  <span class="comment">// 文件夹不存在，或者权限错误</span></span><br><span class="line">  <span class="built_in">console</span>.log(error);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>fs.createWriteStream(path[,option])</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> streamWriter = fs.createWriteStream(<span class="string">'c:\\demo\a.txt'</span>);</span><br><span class="line">setInterval(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">  streamWriter.write(<span class="string">`<span class="subst">$&#123;<span class="keyword">new</span> <span class="built_in">Date</span>&#125;</span>\n`</span>, (error) =&gt; &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(error);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;, <span class="number">1000</span>);</span><br></pre></td></tr></table></figure>
+
+<h3 id="node中的异步操作"><a href="#node中的异步操作" class="headerlink" title="node中的异步操作"></a>node中的异步操作</h3><ul>
+<li>fs模块对文件的几乎所有操作都有同步和异步两种形式</li>
+<li>例如：readFile() 和 readFileSync()</li>
+<li>区别：<ul>
+<li>同步调用会阻塞代码的执行，异步则不会</li>
+<li>异步调用会将读取任务下达到任务队列，直到任务执行完成才会回调</li>
+<li>异常处理方面，同步必须使用 try catch 方式，异步可以通过回调函数的第一个参数</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.time(<span class="string">'sync'</span>);</span><br><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">  <span class="keyword">var</span> data = fs.readFileSync(path.join(<span class="string">'C:\\Users\\iceStone\\Downloads'</span>, <span class="string">'H.mp4'</span>));</span><br><span class="line">  <span class="comment">// console.log(data);</span></span><br><span class="line">&#125; <span class="keyword">catch</span> (error) &#123;</span><br><span class="line">  <span class="keyword">throw</span> error;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.timeEnd(<span class="string">'sync'</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.time(<span class="string">'async'</span>);</span><br><span class="line">fs.readFile(path.join(<span class="string">'C:\\Users\\iceStone\\Downloads'</span>, <span class="string">'H.mp4'</span>), (error, data) =&gt; &#123;</span><br><span class="line">  <span class="keyword">if</span> (error) <span class="keyword">throw</span> error;</span><br><span class="line">  <span class="comment">// console.log(data);</span></span><br><span class="line">&#125;);</span><br><span class="line"><span class="built_in">console</span>.timeEnd(<span class="string">'async'</span>);</span><br></pre></td></tr></table></figure>
+
+<h5 id="promise-对象的使用"><a href="#promise-对象的使用" class="headerlink" title="promise 对象的使用"></a>promise 对象的使用</h5><p>参考资料：<a href="http://liubin.org/promises-book/#what-is-promise" target="_blank" rel="noopener">JavaScript  Promise迷你书</a></p>
+<ul>
+<li>what is Promise *<br>Promise是抽象异步处理对象以及对其进行各种操作的组件。Promise并不是从JavaScript中发祥的概念。<br>Promise最初被提出是在 E语言中， 它是基于并列/并行处理设计的一种编程语言。<br>现在JavaScript也拥有了这种特性，这就是JavaScript Promise</li>
+</ul>
+<p>使用了回调函数的异步处理</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">----</span><br><span class="line">getAsync(<span class="string">"fileA.txt"</span>, <span class="function"><span class="keyword">function</span>(<span class="params">error, result</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(error)&#123;<span class="comment">// 取得失败时的处理</span></span><br><span class="line">        <span class="keyword">throw</span> error;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 取得成功时的处理</span></span><br><span class="line">&#125;);</span><br><span class="line">----</span><br><span class="line">&lt;<span class="number">1</span>&gt; 传给回调函数的参数为(error对象， 执行结果)错误优先处理</span><br></pre></td></tr></table></figure>
+
+<p>使用了回调函数的异步处理</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">----</span><br><span class="line"><span class="keyword">var</span> promise = getAsyncPromise(<span class="string">"fileA.txt"</span>); </span><br><span class="line">promise.then(<span class="function"><span class="keyword">function</span>(<span class="params">result</span>)</span>&#123;</span><br><span class="line">    <span class="comment">// 获取文件内容成功时的处理</span></span><br><span class="line">&#125;).catch(<span class="function"><span class="keyword">function</span>(<span class="params">error</span>)</span>&#123;</span><br><span class="line">    <span class="comment">// 获取文件内容失败时的处理</span></span><br><span class="line">&#125;);</span><br><span class="line">----</span><br><span class="line">&lt;<span class="number">1</span>&gt; 返回promise对象</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>创建Promise对象 *</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">var promise &#x3D; new Promise(function(resolve, reject) &#123;</span><br><span class="line">    &#x2F;&#x2F; 异步处理</span><br><span class="line">    &#x2F;&#x2F; 处理结束后、调用resolve 或 reject</span><br><span class="line">    resolve(&#39;成功处理&#39;)</span><br><span class="line">    reject(&#39;错误处理&#39;)</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>使用实例 *</li>
+</ul>
+<ol>
+<li>创建一个priomise 对象并返回<code>new Promise(fn)</code></li>
+<li>在fn 中指定异步等处理<ul>
+<li>处理结果正常的话，调用<code>resolve(处理结果值)</code></li>
+<li>处理结果错误的话，调用 <code>reject(Error对象)</code></li>
+</ul>
+</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">asyncFunction</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function"><span class="keyword">function</span> (<span class="params">resolve, reject</span>) </span>&#123;</span><br><span class="line">        setTimeout(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">            resolve(<span class="string">'Async Hello world'</span>);</span><br><span class="line">        &#125;, <span class="number">16</span>);</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">asyncFunction().then(<span class="function"><span class="keyword">function</span> (<span class="params">value</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(value);    <span class="comment">// =&gt; 'Async Hello world'</span></span><br><span class="line">&#125;).catch(<span class="function"><span class="keyword">function</span> (<span class="params">error</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(error);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>Promise的状态</li>
+</ul>
+<p>用new Promise 实例化的promise对象有以下三个状态。</p>
+<ul>
+<li><strong>“has-resolution” - Fulfilled</strong>   resolve(成功)时。</li>
+<li><strong>“has-rejection” - Rejected</strong>     reject(失败)时</li>
+<li><strong>“unresolved” - Pending</strong>   既不是resolve也不是reject的状态。也就是promise对象刚被创建后的初始化状态等</li>
+</ul>
+<p>promise对象的状态，从Pending转换为Fulfilled或Rejected之后， 这个promise对象的状态就不会再发生任何变化。</p>
+<p>也就是说，Promise与Event等不同，在.then 后执行的函数可以肯定地说只会被调用一次。</p>
+<p>另外，Fulfilled和Rejected这两个中的任一状态都可以表示为Settled(不变的)。</p>
+<p>Settled<br>resolve(成功) 或 reject(失败)。</p>
+<p>从Pending和Settled的对称关系来看，Promise状态的种类/迁移是非常简单易懂的。</p>
+<p>当promise的对象状态发生变化时，用.then 来定义只会被调用一次的函数。</p>
+<h3 id="路径模块"><a href="#路径模块" class="headerlink" title="路径模块"></a>路径模块</h3><p>在文件操作的过程中，都必须使用物理路径（绝对路径），path模块提供了一系列与路径相关的 API</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="string">'join用于拼接多个路径部分，并转化为正常格式'</span>);</span><br><span class="line"><span class="keyword">const</span> temp = path.join(__dirname, <span class="string">'..'</span>, <span class="string">'lyrics'</span>, <span class="string">'./友谊之光.lrc'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(temp);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'获取路径中的文件名'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(path.basename(temp));</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'获取路径中的文件名并排除扩展名'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(path.basename(temp, <span class="string">'.lrc'</span>));</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'===================================='</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'获取不同操作系统的路径分隔符'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(process.platform + <span class="string">'的分隔符为 '</span> + path.delimiter);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'一般用于分割环境变量'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(process.env.PATH.split(path.delimiter));</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'===================================='</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'获取一个路径中的目录部分'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(path.dirname(temp));</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'===================================='</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'获取一个路径中最后的扩展名'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(path.extname(temp));</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'===================================='</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'将一个路径解析成一个对象的形式'</span>);</span><br><span class="line"><span class="keyword">const</span> pathObject = path.parse(temp);</span><br><span class="line"><span class="built_in">console</span>.log(pathObject);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'===================================='</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'将一个路径对象再转换为一个字符串的形式'</span>);</span><br><span class="line"><span class="comment">// pathObject.name = '我终于失去了你';</span></span><br><span class="line">pathObject.base = <span class="string">'我终于失去了你.lrc'</span>;</span><br><span class="line"><span class="built_in">console</span>.log(pathObject);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(path.format(pathObject));</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'===================================='</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'获取一个路径是不是绝对路径'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(path.isAbsolute(temp));</span><br><span class="line"><span class="built_in">console</span>.log(path.isAbsolute(<span class="string">'../lyrics/爱的代价.lrc'</span>));</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'===================================='</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'将一个路径转换为当前系统默认的标准格式，并解析其中的./和../'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(path.normalize(<span class="string">'c:/develop/demo\\hello/../world/./a.txt'</span>));</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'===================================='</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'获取第二个路径相对第一个路径的相对路径'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(path.relative(__dirname, temp));</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'===================================='</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'以类似命令行cd命令的方式拼接路径'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(path.resolve(temp, <span class="string">'c:/'</span>, <span class="string">'./develop'</span>, <span class="string">'../application'</span>));</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'===================================='</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'获取不同平台中路径的分隔符（默认）'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(path.sep);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'===================================='</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'允许在任意平台下以WIN32的方法调用PATH对象'</span>);</span><br><span class="line"><span class="comment">// console.log(path.win32);</span></span><br><span class="line"><span class="built_in">console</span>.log(path === path.win32);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'===================================='</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'允许在任意平台下以POSIX的方法调用PATH对象'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(path === path.posix);</span><br></pre></td></tr></table></figure>
+
+<h3 id="express"><a href="#express" class="headerlink" title="express"></a>express</h3><hr>
+<p>官网:<a href="http://www.expressjs.com.cn/" target="_blank" rel="noopener">http://www.expressjs.com.cn/</a></p>
+<h4 id="express-环境搭建"><a href="#express-环境搭建" class="headerlink" title="express 环境搭建"></a>express 环境搭建</h4><p>安装</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install express --save</span><br></pre></td></tr></table></figure>
+
+<p>快速开始</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> express = <span class="built_in">require</span>(<span class="string">'express'</span>)</span><br><span class="line">   <span class="keyword">const</span> app = express()</span><br><span class="line">   app.get(<span class="string">'/'</span>, (req, res) =&gt; res.send(<span class="string">'Hello World!'</span>))</span><br><span class="line">   app.listen(<span class="number">3000</span>, () =&gt; <span class="built_in">console</span>.log(<span class="string">'Example app listening on port 3000!'</span>))</span><br></pre></td></tr></table></figure>
+
+<h4 id="express-路由配置"><a href="#express-路由配置" class="headerlink" title="express 路由配置"></a>express 路由配置</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> express=<span class="built_in">require</span>(<span class="string">'express'</span>)</span><br><span class="line"><span class="keyword">let</span> router=express.Router()</span><br><span class="line"><span class="comment">// 该路由使用的中间件</span></span><br><span class="line">router.use(<span class="function">(<span class="params">req,res,next</span>)=&gt;</span>&#123;</span><br><span class="line">	 next()</span><br><span class="line">&#125;);</span><br><span class="line"><span class="comment">// 定义网站主页的路由</span></span><br><span class="line">router.post(<span class="string">'/addFood'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">req, res</span>) </span>&#123;</span><br><span class="line">	<span class="built_in">console</span>.log(<span class="string">'hahaha'</span>)</span><br><span class="line">  <span class="comment">// res.send('这里是admin的登录');</span></span><br><span class="line">&#125;);</span><br><span class="line"><span class="comment">// 定义 about 页面的路由</span></span><br><span class="line">router.post(<span class="string">'/regist'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">req, res</span>) </span>&#123;</span><br><span class="line">  res.send(<span class="string">'这里是admin的注册侧'</span>);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="built_in">module</span>.exports = router;</span><br><span class="line"></span><br><span class="line">app.use(<span class="string">'/admin'</span>,admin)</span><br></pre></td></tr></table></figure>
+
+<h4 id="传递数据的获取"><a href="#传递数据的获取" class="headerlink" title="传递数据的获取"></a>传递数据的获取</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">get</span><br><span class="line">req.query</span><br><span class="line">post</span><br><span class="line">req.body</span><br><span class="line">body-parser</span><br><span class="line"></span><br><span class="line">设置中文格式</span><br><span class="line">res.set(&#39;Content-Type&#39;,&#39;text&#x2F;plain,charset&#x3D;utf8&#39;)</span><br></pre></td></tr></table></figure>
+
+<h4 id="请求模拟工具-postman"><a href="#请求模拟工具-postman" class="headerlink" title="请求模拟工具 postman"></a>请求模拟工具 postman</h4><h4 id="静态资源配置"><a href="#静态资源配置" class="headerlink" title="静态资源配置"></a>静态资源配置</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">app.use(express.static(<span class="string">'public'</span>))</span><br><span class="line"></span><br><span class="line">app.use(<span class="string">'/static'</span>, express.static(<span class="string">'public'</span>))</span><br><span class="line"></span><br><span class="line">app.use(<span class="string">'/static'</span>, express.static(path.join(__dirname, <span class="string">'public'</span>)))</span><br></pre></td></tr></table></figure>
+
+<h2 id="mongod"><a href="#mongod" class="headerlink" title="mongod"></a>mongod</h2><h3 id="安装配置"><a href="#安装配置" class="headerlink" title="安装配置"></a>安装配置</h3><blockquote>
+<p>在<code>Mongodb</code>官网下载最新版本的<a href="https://cloud.mongodb.com/" target="_blank" rel="noopener">Mongodb下载地址</a></p>
+<p>下载<code>msi</code>的<code>window</code>安装包，可以装到C盘或者D盘目录下</p>
+<h1 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h1><p>由于我是安装在D盘的环境下</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">D:\Program Files (x86)\MongoDB\Server\3.2\bin</span><br></pre></td></tr></table></figure>
+
+<p>所以在bin文件夹下找到mongod.exe命令，然后通过管理员执行<code>mongod --dbpath x路径x</code>，路径可以是任何地方，我这里选择在D盘的MongoDB目录下，当然路径不要包含特殊的字符串，比如<code>Program Files (x86)</code>也不行</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mongod --dbpath D:\mongodb\data\db</span><br></pre></td></tr></table></figure>
+
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://user-images.githubusercontent.com/17243165/31977540-fc0a5a6e-b96f-11e7-9a2b-34d66d7241c4.png" alt="image" title="">
+                </div>
+                <div class="image-caption">image</div>
+            </figure>
+
+<h1 id="命令行"><a href="#命令行" class="headerlink" title="命令行"></a>命令行</h1><p>经过上面的配置之后，就可以返回bin目录下找到<code>mongo.exe</code>命令，并管理员下执行，就可以出现mongodb的命令行模式</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">D:\Program Files (x86)\MongoDB\Server\3.2\bin</span><br></pre></td></tr></table></figure>
+
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://user-images.githubusercontent.com/17243165/31978099-57bce3ca-b972-11e7-88bd-30f5d68036ed.png" alt="image" title="">
+                </div>
+                <div class="image-caption">image</div>
+            </figure>
+
+<p>然后就可以使用下面的命令来测试了</p>
+</blockquote>
+<h3 id="mongod-1"><a href="#mongod-1" class="headerlink" title="mongod"></a>mongod</h3><blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">db.help()<span class="comment">//帮助</span></span><br><span class="line">db.stats()<span class="comment">//统计</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="显示数据库"><a href="#显示数据库" class="headerlink" title="显示数据库"></a>显示数据库</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">show dbs</span><br></pre></td></tr></table></figure>
+
+<p>检查当前选择的数据库</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">db</span><br></pre></td></tr></table></figure>
+
+<h1 id="添加数据库"><a href="#添加数据库" class="headerlink" title="添加数据库"></a>添加数据库</h1><p><strong>数据库名</strong>为数据库创建的名字，使用该命令后会默认切换到对应的数据库，并且在数据库中添加选项，数据库信息才显示，如果默认就有该数据库，那就是切换到对应的数据库里面</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">use 数据库名</span><br></pre></td></tr></table></figure>
+
+<h1 id="删除数据库"><a href="#删除数据库" class="headerlink" title="删除数据库"></a>删除数据库</h1><p>先切换到对应的数据库，然后再执行<code>db.dropDatabase()</code>删除该数据库</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">use 数据库名</span><br><span class="line"><span class="comment">//switched to db 数据库名</span></span><br><span class="line">db.dropDatabase()</span><br></pre></td></tr></table></figure>
+
+<h1 id="显示集合"><a href="#显示集合" class="headerlink" title="显示集合"></a>显示集合</h1><p>用一下命令可以检查创建的集合</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">show collections</span><br></pre></td></tr></table></figure>
+
+<h1 id="添加集合"><a href="#添加集合" class="headerlink" title="添加集合"></a>添加集合</h1><p>在创建完数据库之后，我们就可以创建集合</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">db.createCollection(集合名字name，设置参数options[对象类型])</span><br></pre></td></tr></table></figure>
+
+<p><strong>name</strong>是要创建的集合的名称。 <strong>options</strong>是一个文档，用于指定集合的配置</p>
+<p>参数    类型    描述<br>name    String    要创建的集合的名称<br>options    Document    (可选)指定有关内存大小和索引的选项<br><strong>options</strong>参数是可选的，因此只需要指定集合的名称。 以下是可以使用的选项列表：</p>
+<p>字段    类型    描述<br>capped    Boolean    (可选)如果为true，则启用封闭的集合。上限集合是固定大小的集合，它在达到其最大大小时自动覆盖其最旧的条目。 如果指定true，则还需要指定size参数。<br>autoIndexId    Boolean    (可选)如果为true，则在_id字段上自动创建索引。默认值为false。<br>size    数字    (可选)指定上限集合的最大大小(以字节为单位)。 如果capped为true，那么还需要指定此字段的值。<br>max    数字    (可选)指定上限集合中允许的最大文档数。<br>由于<strong>option</strong>是可选，我们也可以不带配置项创建集合</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">db.createCollection(<span class="string">"mycollection"</span>)</span><br></pre></td></tr></table></figure>
+
+<h1 id="删除集合"><a href="#删除集合" class="headerlink" title="删除集合"></a>删除集合</h1><p><code>db.collection.drop()</code>用于从数据库中删除集合</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">db.集合名.drop()</span><br></pre></td></tr></table></figure>
+
+<p>比如我们可以测试以下操作</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">db.createCollection(<span class="string">"wscats"</span>)<span class="comment">//创建名为wscats的集合</span></span><br><span class="line">show collections<span class="comment">//显示该数据库所有集合   wscats</span></span><br><span class="line">db.wscats.drop()<span class="comment">//删除名为wscats的集合</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="查看文档"><a href="#查看文档" class="headerlink" title="查看文档"></a>查看文档</h1><p>最简单查看文档的方法就是<code>find()</code>，会检索集合中所有的文档结果</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">db.集合名.find()</span><br></pre></td></tr></table></figure>
+
+<p>要以格式化的方式显示结果，可以使用<code>pretty()</code>方法。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">db.集合名.find().pretty()</span><br></pre></td></tr></table></figure>
+
+<h2 id="1-固值寻找"><a href="#1-固值寻找" class="headerlink" title="1.固值寻找"></a>1.固值寻找</h2><p>寻找age集合里面所有含有属性值为wscats的文档结果，相当于<code>where name = &#39;wscats&#39;</code></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">db.age.find(&#123;<span class="attr">name</span>:<span class="string">"wscats"</span>&#125;)</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-范值寻找"><a href="#2-范值寻找" class="headerlink" title="2.范值寻找"></a>2.范值寻找</h2><p>操作    语法    示例    等效语句<br>相等    {:}    <code>db.age.find({&quot;name&quot;:&quot;wscats&quot;}).pretty()</code>    where name = ‘wscats’<br>小于    {:{$lt:}}    <code>db.age.find({&quot;likes&quot;:{$lt:50}}).pretty()</code>    where likes &lt; 50<br>小于等于    {:{$lte:}}    <code>db.age.find({&quot;likes&quot;:{$lte:50}}).pretty()</code>    where likes &lt;= 50<br>大于    {:{$gt:}}    <code>db.age.find({&quot;likes&quot;:{$gt:50}}).pretty()</code>    where likes &gt; 50<br>大于等于    {:{$gte:}}    <code>db.age.find({&quot;likes&quot;:{$gte:50}}).pretty()</code>    where likes &gt;= 50<br>不等于    {:{$ne:}}    <code>db.age.find({&quot;likes&quot;:{$ne:50}}).pretty()</code>    where likes != 50</p>
+<h2 id="3-AND和OR寻找"><a href="#3-AND和OR寻找" class="headerlink" title="3.AND和OR寻找"></a>3.AND和OR寻找</h2><h3 id="AND"><a href="#AND" class="headerlink" title="AND"></a>AND</h3><p>在find()方法中，如果通过使用<code>，</code>将它们分开传递多个键，则mongodb将其视为<strong>AND</strong>条件。 以下是AND的基本语法</p>
+<p>寻找<code>_id</code>为1并且<code>name</code>为wscats的所有结果集</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">db.age.find(</span><br><span class="line">   &#123;</span><br><span class="line">      $and: [</span><br><span class="line">         &#123;<span class="string">"_id"</span>: <span class="number">1</span>&#125;, &#123;<span class="string">"name"</span>: <span class="string">"wscats"</span>&#125;</span><br><span class="line">      ]</span><br><span class="line">   &#125;</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+
+<h3 id="OR"><a href="#OR" class="headerlink" title="OR"></a>OR</h3><p>在要根据OR条件查询文档，需要使用<code>$or</code>关键字。以下是OR条件的基本语法</p>
+<p>寻找<code>name</code>为corrine或者<code>name</code>为wscats的所有结果集</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">db.age.find(</span><br><span class="line">   &#123;</span><br><span class="line">      $or: [</span><br><span class="line">         &#123;<span class="string">"name"</span>: <span class="string">"corrine"</span>&#125;, &#123;“name“: <span class="string">"wscats"</span>&#125;</span><br><span class="line">      ]</span><br><span class="line">   &#125;</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+
+<h3 id="AND和OR等结合"><a href="#AND和OR等结合" class="headerlink" title="AND和OR等结合"></a>AND和OR等结合</h3><p>相当于语句<code>where title = &quot;wscats&quot; OR ( title = &quot;corrine&quot; AND _id &lt; 5)</code></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">db.age.find(&#123;</span><br><span class="line">  $or: [&#123;</span><br><span class="line">    <span class="string">"title"</span>: <span class="string">"wscats"</span></span><br><span class="line">  &#125;, &#123;</span><br><span class="line">    $and: [&#123;</span><br><span class="line">      <span class="string">"title"</span>: <span class="string">"corrine"</span></span><br><span class="line">    &#125;, &#123;</span><br><span class="line">      <span class="string">"_id"</span>: &#123;</span><br><span class="line">        $lte: <span class="number">5</span></span><br><span class="line">      &#125;</span><br><span class="line">    &#125;]</span><br><span class="line">  &#125;]</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<h1 id="插入文档"><a href="#插入文档" class="headerlink" title="插入文档"></a>插入文档</h1><p>文档的数据结构和JSON基本一样。<br>所有存储在集合中的数据都是BSON格式。<br>BSON是一种类json的一种二进制形式的存储格式,简称<strong>Binary JSON</strong>。</p>
+<p>要将数据插入到mongodb集合中，需要使用mongodb的<code>insert()</code>或<code>save()</code>方法。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">db.集合名.insert(<span class="built_in">document</span>)</span><br></pre></td></tr></table></figure>
+
+<p>比如我们可以插入以下数据</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">db.wscats.insert(&#123;</span><br><span class="line">   _id: <span class="number">100</span>,</span><br><span class="line">   title: <span class="string">'MongoDB Tutorials'</span>, </span><br><span class="line">   description: <span class="string">'node_tutorials'</span>,</span><br><span class="line">   by: <span class="string">'Oaoafly'</span>,</span><br><span class="line">   url: <span class="string">'https://github.com/Wscats/node-tutorial'</span>,</span><br><span class="line">   tags: [<span class="string">'wscat'</span>,<span class="string">'MongoDB'</span>, <span class="string">'database'</span>, <span class="string">'NoSQL'</span>,<span class="string">'node'</span>],</span><br><span class="line">   num: <span class="number">100</span>,</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<p>也可以支持插入多个，注意传入的是数组形式</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">db.wscats.insert([&#123;</span><br><span class="line">   _id: <span class="number">100</span>,</span><br><span class="line">   title: ‘Hello’</span><br><span class="line">&#125;,&#123;</span><br><span class="line">   _id: <span class="number">101</span>,</span><br><span class="line">   title: ‘World’</span><br><span class="line">&#125;])</span><br></pre></td></tr></table></figure>
+
+<p>在插入的文档中，如果不指定_id参数，那么mongodb会为此文档分配一个唯一的ObjectId<br>要插入文档，也可以使用<code>db.post.save(document)</code>。如果不在文档中指定_id，那么<code>save()</code>方法将与<code>insert()</code>方法一样自动分配ID的值。如果指定_id，则将以save()方法的形式替换包含<strong>_id</strong>的文档的全部数据。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">db.wscats.save(&#123;</span><br><span class="line">   _id: <span class="number">111</span>,</span><br><span class="line">   title: <span class="string">'Oaoafly Wscats'</span>, </span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<h1 id="更新文档"><a href="#更新文档" class="headerlink" title="更新文档"></a>更新文档</h1><h2 id="1-update-方法"><a href="#1-update-方法" class="headerlink" title="1.update()方法"></a>1.update()方法</h2><p>寻找第一条title为wscats的值，并且更新值title为corrine和age为12</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">db.age.update(&#123;</span><br><span class="line">  <span class="string">'title'</span>: <span class="string">'wscats'</span></span><br><span class="line">&#125;, &#123;</span><br><span class="line">  $<span class="keyword">set</span>: &#123;</span><br><span class="line">    <span class="string">'title'</span>: <span class="string">'corrine'</span>,</span><br><span class="line">    <span class="string">'age'</span>: <span class="number">12</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<p>默认情况下，mongodb只会更新一个文档。要更新多个文档，需要将参数<code>multi</code>设置为true，还可以配合find方法里面的各种复杂条件判断来筛选结果，然后更新多个文档</p>
+<p>寻找所有title为wscats的值，并且更新值title为corrine和age为12</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">db.age.update(&#123;</span><br><span class="line">  <span class="string">'title'</span>: <span class="string">'wscats'</span></span><br><span class="line">&#125;, &#123;</span><br><span class="line">  $<span class="keyword">set</span>: &#123;</span><br><span class="line">    <span class="string">'title'</span>: <span class="string">'corrine'</span>,</span><br><span class="line">    <span class="string">'age'</span>: <span class="number">12</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;, &#123;</span><br><span class="line">  multi: <span class="literal">true</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-save-方法"><a href="#2-save-方法" class="headerlink" title="2.save()方法"></a>2.save()方法</h2><p>将<code>_id</code>主键为3的文档，覆盖新的值，注意<code>_id</code>为必传</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">db.age.save(&#123;</span><br><span class="line">  &#39;_id&#39;:3,</span><br><span class="line">  &#39;title&#39;: &#39;wscats&#39;</span><br><span class="line">&#125;)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h1 id="删除文档"><a href="#删除文档" class="headerlink" title="删除文档"></a>删除文档</h1><p>删除主键<code>_id</code>为3的文档，默认是删除多条</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">db.age.remove(&#123;</span><br><span class="line">  <span class="string">'_id'</span>:<span class="number">3</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<p>建议在执行<code>remove()</code>函数前先执行<code>find()</code>命令来判断执行的条件是否正确</p>
+<p>如果你只想删除第一条找到的记录可以设置<strong>justOne</strong>为1，如下所示</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">db.age.remove(&#123;...&#125;,<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
+
+<p>全部删除</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">db.age.remove(&#123;&#125;)</span><br></pre></td></tr></table></figure>
+
+<h1 id="Limit与Skip方法"><a href="#Limit与Skip方法" class="headerlink" title="Limit与Skip方法"></a>Limit与Skip方法</h1><h2 id="Limit"><a href="#Limit" class="headerlink" title="Limit"></a>Limit</h2><p>如果你需要在mongodb中读取指定数量的数据记录，可以使用mongodb的Limit方法，<code>limit()</code>方法接受一个数字参数，该参数指定从mongodb中读取的记录条数。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">db.age.find().limit(数量)</span><br></pre></td></tr></table></figure>
+
+<h2 id="Skip"><a href="#Skip" class="headerlink" title="Skip"></a>Skip</h2><p>我们除了可以使用<code>limit()</code>方法来读取指定数量的数据外，还可以使用<code>skip()</code>方法来跳过指定数量的数据，skip方法同样接受一个数字参数作为跳过的记录条数。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">db.age.find().limit(数量).skip(数量)</span><br><span class="line"><span class="comment">//skip()方法默认值为0</span></span><br></pre></td></tr></table></figure>
+
+<p>所以我们在实现分页的时候就可以用limit来限制每页多少条数据(一般固定一个值)，用skip来决定显示第几页(一个有规律变动的值)</p>
+<h1 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h1><p>在mongodb中使用使用<code>sort()</code>方法对数据进行排序，<code>sort()</code>方法可以通过参数指定排序的字段，并使用1和-1来指定排序的方式，其中1为升序排列，而-1是用于降序排列。</p>
+<p>1    升序排列<br>-1    降序排列</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">db.集合名.find().sort(&#123;键值(属性值):<span class="number">1</span>&#125;)</span><br></pre></td></tr></table></figure>
+
+<p>把<code>age</code>集合表重新根据<code>_id</code>主键进行降序排列</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">db.age.find().sort(&#123;</span><br><span class="line">  <span class="string">"_id"</span>: <span class="number">-1</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<h1 id="Node-js连接"><a href="#Node-js连接" class="headerlink" title="Node.js连接"></a>Node.js连接</h1><p>安装mongodb的模块</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install mongodb</span><br></pre></td></tr></table></figure>
+
+<h2 id="1-连接数据库"><a href="#1-连接数据库" class="headerlink" title="1.连接数据库"></a>1.连接数据库</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> MongoClient = <span class="built_in">require</span>(<span class="string">'mongodb'</span>).MongoClient;</span><br><span class="line"><span class="comment">//结尾是选择数据库名</span></span><br><span class="line"><span class="keyword">var</span> DB_CONN_STR = <span class="string">'mongodb://localhost:27017/wscats'</span>;</span><br><span class="line">MongoClient.connect(DB_CONN_STR, <span class="function"><span class="keyword">function</span>(<span class="params">err, db</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">"连接成功！"</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-查询数据"><a href="#2-查询数据" class="headerlink" title="2.查询数据"></a>2.查询数据</h2><p>注意查询回来的结果需要toArray来遍历处理</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> MongoClient = <span class="built_in">require</span>(<span class="string">'mongodb'</span>).MongoClient;</span><br><span class="line"><span class="keyword">var</span> DB_CONN_STR = <span class="string">'mongodb://localhost:27017/wscats'</span>;</span><br><span class="line"></span><br><span class="line">MongoClient.connect(DB_CONN_STR, <span class="function"><span class="keyword">function</span>(<span class="params">err, db</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">"连接成功！"</span>);</span><br><span class="line">  <span class="comment">//选中age集合，并用find方法把结果集拿回来进行处理</span></span><br><span class="line">  db.collection(<span class="string">"age"</span>).find(&#123;<span class="attr">title</span>: <span class="string">"cba"</span>&#125;).toArray(<span class="function"><span class="keyword">function</span>(<span class="params">err, result</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (err) &#123;</span><br><span class="line">      <span class="built_in">console</span>.log(<span class="string">'Error:'</span> + err);</span><br><span class="line">      <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">console</span>.log(result);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>经过测试，读取大于100条的时候会出现报错<a href="https://docs.mongodb.com/manual/tutorial/iterate-a-cursor/#cursor-batches" target="_blank" rel="noopener">官网解释</a>，可以尝试用<code>forEach</code>代替</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">db.collection(<span class="string">'pokemon'</span>).find(&#123;&#125;)</span><br><span class="line">  .forEach(<span class="function"><span class="keyword">function</span>(<span class="params">item</span>)</span>&#123;</span><br><span class="line">      <span class="built_in">console</span>.log(item)</span><br><span class="line">  &#125;)</span><br></pre></td></tr></table></figure>
+
+<h3 id="查询ID"><a href="#查询ID" class="headerlink" title="查询ID"></a>查询ID</h3><p>查询自动生成的<code>ObjectId</code></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> ObjectId = <span class="built_in">require</span>(<span class="string">'mongodb'</span>).ObjectId;</span><br><span class="line"><span class="keyword">let</span> _id = ObjectId(<span class="string">"5bcae50ed1f2c2f5e4e1a76a"</span>);</span><br><span class="line">db.collection(<span class="string">'xxx'</span>).find(&#123;</span><br><span class="line">    <span class="string">"_id"</span>: _id</span><br><span class="line">&#125;).forEach(<span class="function"><span class="keyword">function</span> (<span class="params">item</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(item)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-插入数据"><a href="#3-插入数据" class="headerlink" title="3.插入数据"></a>3.插入数据</h2><p>insert函数第一个参数是需要插入的值(可以一个也可以多个)，第二个参数是接受一个回调函数，当值插入成功后回返回插入值得一些关键信息，比如<code>_id</code></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> MongoClient = <span class="built_in">require</span>(<span class="string">'mongodb'</span>).MongoClient;</span><br><span class="line"><span class="keyword">var</span> DB_CONN_STR = <span class="string">'mongodb://localhost:27017/wscats'</span>;</span><br><span class="line"></span><br><span class="line">MongoClient.connect(DB_CONN_STR, <span class="function"><span class="keyword">function</span>(<span class="params">err, db</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">"连接成功！"</span>);</span><br><span class="line"><span class="keyword">const</span> db = client.db(<span class="string">"demo"</span>);</span><br><span class="line">  db.collection(<span class="string">"age"</span>).insert([</span><br><span class="line">    &#123; </span><br><span class="line">      title: <span class="string">"插入的值A"</span></span><br><span class="line">    &#125;, &#123;</span><br><span class="line">      title: <span class="string">"插入的值B"</span></span><br><span class="line">    &#125;</span><br><span class="line">  ], <span class="function"><span class="keyword">function</span>(<span class="params">err, result</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (err) &#123;</span><br><span class="line">      <span class="built_in">console</span>.log(<span class="string">'Error:'</span> + err);</span><br><span class="line">      <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">console</span>.log(result)</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<h2 id="4-更新数据"><a href="#4-更新数据" class="headerlink" title="4.更新数据"></a>4.更新数据</h2><p>注意如果不加$set就是完全替换原来的那份(没有设置的属性值将会丢失)，加上$set则只是更新对应的属性值，其余不做改变</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> MongoClient = <span class="built_in">require</span>(<span class="string">'mongodb'</span>).MongoClient;</span><br><span class="line"><span class="keyword">var</span> DB_CONN_STR = <span class="string">'mongodb://localhost:27017/wscats'</span>;</span><br><span class="line"></span><br><span class="line">MongoClient.connect(DB_CONN_STR, <span class="function"><span class="keyword">function</span>(<span class="params">err, db</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">"连接成功！"</span>);</span><br><span class="line">  db.collection(<span class="string">"age"</span>).update(&#123;</span><br><span class="line">    <span class="string">"_id"</span>: <span class="number">1</span></span><br><span class="line">  &#125;, &#123;</span><br><span class="line">    $<span class="keyword">set</span>: &#123;</span><br><span class="line">      title: <span class="string">"你好，世界"</span>,</span><br><span class="line">      skill: <span class="string">"js"</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;, <span class="function"><span class="keyword">function</span>(<span class="params">err, result</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (err) &#123;</span><br><span class="line">      <span class="built_in">console</span>.log(<span class="string">'Error:'</span> + err);</span><br><span class="line">      <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//console.log(result);</span></span><br><span class="line">  &#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<h2 id="5-删除数据"><a href="#5-删除数据" class="headerlink" title="5.删除数据"></a>5.删除数据</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> MongoClient = <span class="built_in">require</span>(<span class="string">'mongodb'</span>).MongoClient;</span><br><span class="line"><span class="keyword">var</span> DB_CONN_STR = <span class="string">'mongodb://localhost:27017/wscats'</span>;</span><br><span class="line"></span><br><span class="line">MongoClient.connect(DB_CONN_STR, <span class="function"><span class="keyword">function</span>(<span class="params">err, db</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">"连接成功！"</span>);</span><br><span class="line">  db.collection(<span class="string">"age"</span>).remove(&#123;</span><br><span class="line">    <span class="string">"_id"</span>: <span class="number">1</span></span><br><span class="line">  &#125;, <span class="function"><span class="keyword">function</span>(<span class="params">err, result</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (err) &#123;</span><br><span class="line">      <span class="built_in">console</span>.log(<span class="string">'Error:'</span> + err);</span><br><span class="line">      <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//console.log(result);</span></span><br><span class="line">    <span class="comment">//关闭数据库</span></span><br><span class="line">    db.close();</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<h2 id="6-关闭数据库"><a href="#6-关闭数据库" class="headerlink" title="6.关闭数据库"></a>6.关闭数据库</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">db.close();</span><br></pre></td></tr></table></figure>
+
+<h1 id="封装自定义模块"><a href="#封装自定义模块" class="headerlink" title="封装自定义模块"></a>封装自定义模块</h1><p>新建<code>mongo.js</code>写入以下代码，封装自定义模块，方便其他路由复用，注意<code>assert</code>是node自带的断言模块，用于测试代码</p>
+<p>参考</p>
+<ul>
+<li><a href="http://nodejs.cn/api/assert.html" target="_blank" rel="noopener">官网API文档</a></li>
+<li><a href="https://www.cnblogs.com/hong7zai/p/5909914.html" target="_blank" rel="noopener">Node.js的断言模块assert进行单元测试</a></li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> MongoClient = <span class="built_in">require</span>(<span class="string">'mongodb'</span>).MongoClient;</span><br><span class="line"><span class="keyword">const</span> assert = <span class="built_in">require</span>(<span class="string">'assert'</span>);</span><br><span class="line"><span class="keyword">const</span> url = <span class="string">'mongodb://localhost:27017'</span>;</span><br><span class="line"><span class="keyword">const</span> dbName = <span class="string">'shop'</span>;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">query</span>(<span class="params">callback</span>) </span>&#123;</span><br><span class="line">	MongoClient.connect(url, <span class="function"><span class="keyword">function</span>(<span class="params">err, client</span>) </span>&#123;</span><br><span class="line">		assert.equal(<span class="literal">null</span>, err);</span><br><span class="line">		<span class="built_in">console</span>.log(<span class="string">"Connected successfully to server"</span>);</span><br><span class="line">		<span class="keyword">const</span> db = client.db(dbName);</span><br><span class="line">		callback(db);</span><br><span class="line">		client.close();</span><br><span class="line">	&#125;);</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">	query</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>在路由文件中引入和使用</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> mongo = <span class="built_in">require</span>(<span class="string">'./mongo.js'</span>)</span><br><span class="line">router.post(<span class="string">'/addproduct'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">req, res, next</span>) </span>&#123;</span><br><span class="line">	mongo.query(<span class="function"><span class="keyword">function</span>(<span class="params">db</span>) </span>&#123;</span><br><span class="line">		db.collection(<span class="string">"product"</span>).insertMany([req.body], <span class="function"><span class="keyword">function</span>(<span class="params">err, result</span>) </span>&#123;</span><br><span class="line">			<span class="built_in">console</span>.log(<span class="string">"Inserted 1 document into the collection"</span>);</span><br><span class="line">			res.send(<span class="string">'respond with a resource'</span>);</span><br><span class="line">		&#125;);</span><br><span class="line">	&#125;)</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+</blockquote>
+<h3 id="mongoose"><a href="#mongoose" class="headerlink" title="mongoose"></a>mongoose</h3><blockquote>
+</blockquote>
+<h3 id="可视化"><a href="#可视化" class="headerlink" title="可视化"></a>可视化</h3><blockquote>
+<ul>
+<li><a href="https://robomongo.org/" target="_blank" rel="noopener">Robo 3T</a></li>
+<li><a href="https://studio3t.com/download-thank-you/?OS=win64" target="_blank" rel="noopener">Studio3t</a></li>
+</ul>
+</blockquote>
+<h2 id="Socket"><a href="#Socket" class="headerlink" title="Socket"></a>Socket</h2><h3 id="socket-io"><a href="#socket-io" class="headerlink" title="socket.io"></a>socket.io</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width, initial-scale=1.0"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"X-UA-Compatible"</span> <span class="attr">content</span>=<span class="string">"ie=edge"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">title</span>&gt;</span>socket.io<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"socket.io.js"</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">h1</span>&gt;</span>gp6 交流区<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"content"</span> <span class="attr">name</span>=<span class="string">"name"</span> <span class="attr">style</span>=<span class="string">"overflow-y: scroll; width: 400px; height: 300px; border: solid 1px #000"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">br</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">id</span>=<span class="string">"msg"</span> <span class="attr">style</span>=<span class="string">"width: 200px;"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">button</span> <span class="attr">id</span>=<span class="string">"submit"</span>&gt;</span>提交<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="actionscript">    <span class="keyword">var</span> socket = io.connect(<span class="string">'http://10.9.164.98:8081'</span>);</span></span><br><span class="line"><span class="javascript">    <span class="keyword">const</span> content = <span class="built_in">document</span>.getElementById(<span class="string">'content'</span>)</span></span><br><span class="line"><span class="javascript">    <span class="built_in">document</span>.querySelector(<span class="string">'#submit'</span>)</span></span><br><span class="line"><span class="actionscript">      .addEventListener(<span class="string">'click'</span>, <span class="function"><span class="keyword">function</span> <span class="params">()</span> </span>&#123;</span></span><br><span class="line"><span class="actionscript">        <span class="keyword">var</span> msg2 = msg.value</span></span><br><span class="line"><span class="actionscript">        socket.emit(<span class="string">'receive'</span>, msg2)</span></span><br><span class="line"><span class="actionscript">        msg.value = <span class="string">''</span></span></span><br><span class="line"><span class="actionscript">        content.innerHTML += msg2 + <span class="string">'&lt;br/&gt;'</span></span></span><br><span class="line"><span class="actionscript">      &#125;, <span class="literal">false</span>)</span></span><br><span class="line"></span><br><span class="line"><span class="actionscript">      socket.on(<span class="string">'message'</span>, <span class="function"><span class="keyword">function</span><span class="params">(msg)</span></span>&#123;</span></span><br><span class="line"><span class="actionscript">        content.innerHTML += msg + <span class="string">'&lt;br/&gt;'</span></span></span><br><span class="line">      &#125;)</span><br><span class="line">  <span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>server.js</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> express = <span class="built_in">require</span>(<span class="string">'express'</span>);</span><br><span class="line"><span class="keyword">var</span> app = express();</span><br><span class="line"><span class="keyword">var</span> server = <span class="built_in">require</span>(<span class="string">'http'</span>).Server(app);</span><br><span class="line"><span class="keyword">var</span> io = <span class="built_in">require</span>(<span class="string">'socket.io'</span>)(server);</span><br><span class="line"></span><br><span class="line">app.use(express.static(__dirname + <span class="string">'/client'</span>))</span><br><span class="line"></span><br><span class="line">io.on(<span class="string">'connection'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">socket</span>) </span>&#123;</span><br><span class="line">  setInterval(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    socket.emit(<span class="string">'list'</span>, <span class="string">'abc'</span>)</span><br><span class="line">  &#125;, <span class="number">1000</span>)</span><br><span class="line">  socket.broadcast.emit(<span class="string">'list'</span>, <span class="string">'test'</span>);</span><br><span class="line">  socket.on(<span class="string">'backend'</span>, (msg) =&gt; &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(msg);</span><br><span class="line">  &#125;)</span><br><span class="line"></span><br><span class="line">  socket.on(<span class="string">'receive'</span>, (msg) =&gt; &#123;</span><br><span class="line">    socket.broadcast.emit(<span class="string">'message'</span>, msg);</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">server.listen(<span class="number">8081</span>, <span class="string">'10.9.164.98'</span>);</span><br></pre></td></tr></table></figure>
+
+<h3 id="net模块"><a href="#net模块" class="headerlink" title="net模块"></a>net模块</h3><p>serverCode</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> net = <span class="built_in">require</span>(<span class="string">'net'</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> server = <span class="keyword">new</span> net.createServer()</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> clients = &#123;&#125;</span><br><span class="line"><span class="keyword">let</span> clientName = <span class="number">0</span></span><br><span class="line"></span><br><span class="line">server.on(<span class="string">'connection'</span>, (client) =&gt; &#123;</span><br><span class="line">  client.name = ++clientName</span><br><span class="line">  clients[client.name] = client</span><br><span class="line"></span><br><span class="line">  client.on(<span class="string">'data'</span>, (msg) =&gt; &#123;</span><br><span class="line">    <span class="comment">// console.log('客户端传来：' + msg);</span></span><br><span class="line">    broadcast(client, msg.toString())</span><br><span class="line">  &#125;)</span><br><span class="line"></span><br><span class="line">  client.on(<span class="string">'error'</span>, (e) =&gt; &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'client error'</span> + e);</span><br><span class="line">    client.end()</span><br><span class="line">  &#125;)</span><br><span class="line"></span><br><span class="line">  client.on(<span class="string">'close'</span>, (data) =&gt; &#123;</span><br><span class="line">    <span class="keyword">delete</span> clients[client.name]</span><br><span class="line">    <span class="built_in">console</span>.log(client.name + <span class="string">' 下线了'</span>);</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">broadcast</span>(<span class="params">client, msg</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">var</span> key <span class="keyword">in</span> clients) &#123;</span><br><span class="line">    clients[key].write(client.name + <span class="string">' 说：'</span> + msg)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">server.listen(<span class="number">9000</span>)</span><br></pre></td></tr></table></figure>
+
+<p>clientCode</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> net = <span class="built_in">require</span>(<span class="string">'net'</span>)</span><br><span class="line"><span class="keyword">const</span> readline = <span class="built_in">require</span>(<span class="string">'readline'</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> port = <span class="number">9000</span></span><br><span class="line"><span class="keyword">var</span> host = <span class="string">'127.0.0.1'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> socket = <span class="keyword">new</span> net.Socket()</span><br><span class="line"></span><br><span class="line">socket.setEncoding = <span class="string">'UTF-8'</span></span><br><span class="line"></span><br><span class="line">socket.connect(port, host, () =&gt; &#123;</span><br><span class="line">  socket.write(<span class="string">'hello.'</span>)</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">socket.on(<span class="string">'data'</span>, (msg) =&gt; &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(msg.toString())</span><br><span class="line">  say()</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">socket.on(<span class="string">'error'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">err</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'error'</span> + err);</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">socket.on(<span class="string">'close'</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'connection closeed'</span>);</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> r1 = readline.createInterface(&#123;</span><br><span class="line">  input: process.stdin,</span><br><span class="line">  output: process.stdout</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">say</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  r1.question(<span class="string">'请输入：'</span>, (inputMsg) =&gt; &#123;</span><br><span class="line">    <span class="keyword">if</span> (inputMsg != <span class="string">'bye'</span>) &#123;</span><br><span class="line">      socket.write(inputMsg + <span class="string">'\n'</span>)</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      socket.destroy()</span><br><span class="line">      r1.close()</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="websocket"><a href="#websocket" class="headerlink" title="websocket"></a>websocket</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> ws = <span class="keyword">new</span> WebSocket(<span class="string">'ws://localhost:8080/'</span>)</span><br><span class="line"></span><br><span class="line">ws.onopen = <span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">  ws.send(<span class="string">'大家好'</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">ws.onmessage = <span class="function">(<span class="params">msg</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">const</span> content = <span class="built_in">document</span>.getElementById(<span class="string">'content'</span>)</span><br><span class="line">  content.innerHTML += msg.data + <span class="string">'&lt;br/&gt;'</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">ws.onerror = <span class="function">(<span class="params">err</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(err);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">ws.onclose = <span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'closed~'</span>);</span><br><span class="line">&#125;</span><br><span class="line">ws.send(msg2)</span><br></pre></td></tr></table></figure>
+
+<p>server.js</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> WebSocket = <span class="built_in">require</span>(<span class="string">'ws'</span>)</span><br><span class="line"><span class="keyword">const</span> ws = <span class="keyword">new</span> WebSocket.Server(&#123; <span class="attr">port</span>: <span class="number">8080</span> &#125;)</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> clients = &#123;&#125;</span><br><span class="line"><span class="keyword">let</span> clientName = <span class="number">0</span></span><br><span class="line"></span><br><span class="line">ws.on(<span class="string">'connection'</span>, (client) =&gt; &#123;</span><br><span class="line">  client.name = ++clientName</span><br><span class="line">  clients[client.name] = client</span><br><span class="line"></span><br><span class="line">  client.on(<span class="string">'message'</span>, (msg) =&gt; &#123;</span><br><span class="line">    broadcast(client, msg)</span><br><span class="line">  &#125;)</span><br><span class="line"></span><br><span class="line">  client.on(<span class="string">'close'</span>, () =&gt; &#123;</span><br><span class="line">    <span class="keyword">delete</span> clients[client.name]</span><br><span class="line">    <span class="built_in">console</span>.log(client.name + <span class="string">' 离开了~'</span>)</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">broadcast</span>(<span class="params">client, msg</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">var</span> key <span class="keyword">in</span> clients) &#123;</span><br><span class="line">    clients[key].send(client.name + <span class="string">' 说：'</span> + msg)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="项目实战"><a href="#项目实战" class="headerlink" title="项目实战"></a>项目实战</h2><h3 id="api接口"><a href="#api接口" class="headerlink" title="api接口"></a>api接口</h3><ul>
+<li>RestfulApi 规范</li>
+<li>接口文档的生成(apidoc)</li>
+<li>接口请求方式区别</li>
+</ul>
+<h3 id="跨域解决"><a href="#跨域解决" class="headerlink" title="跨域解决"></a>跨域解决</h3><ul>
+<li>cors</li>
+<li>jsonp</li>
+<li>proxy</li>
+</ul>
+<h3 id="身份验证"><a href="#身份验证" class="headerlink" title="身份验证"></a>身份验证</h3><h4 id="JWT"><a href="#JWT" class="headerlink" title="JWT"></a>JWT</h4><p>产生token</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var jwt &#x3D; require(&#39;jsonwebtoken&#39;);</span><br><span class="line">var token &#x3D; jwt.sign(&#123; foo: &#39;bar&#39; &#125;, &#39;shhhhh&#39;);</span><br></pre></td></tr></table></figure>
+
+<p>验证token </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; verify a token symmetric</span><br><span class="line">jwt.verify(token, &#39;shhhhh&#39;, function(err, decoded) &#123;</span><br><span class="line">  console.log(decoded.foo) &#x2F;&#x2F; bar</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<h4 id="Cookie-Session"><a href="#Cookie-Session" class="headerlink" title="Cookie+Session"></a>Cookie+Session</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">npm install express-session -d --save</span><br><span class="line"></span><br><span class="line">app.use(session(&#123;</span><br><span class="line">  secret: &quot;weird sheep&quot;,</span><br><span class="line">  resave: false,</span><br><span class="line">  saveUninitialized: true,</span><br><span class="line">  cookie: &#123;user:&quot;default&quot;,maxAge: 14*24*60*60*1000&#125;</span><br><span class="line">&#125;));</span><br><span class="line">session存值</span><br><span class="line">req.session.user &#x3D; user;</span><br><span class="line">req.session.isLogin &#x3D; true;</span><br></pre></td></tr></table></figure>
+
+<p>​    </p>
+<h3 id="图片上传"><a href="#图片上传" class="headerlink" title="图片上传"></a>图片上传</h3><ol>
+<li>安装multer模块</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install multer</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>引用模块<br>它是依赖于express的一个模块</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//引用express并配置</span></span><br><span class="line"><span class="keyword">var</span> express = <span class="built_in">require</span>(<span class="string">"express"</span>);</span><br><span class="line"><span class="keyword">var</span> app = express();</span><br><span class="line">app.listen(<span class="number">3000</span>);</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> multer = <span class="built_in">require</span>(<span class="string">'multer'</span>);</span><br><span class="line"><span class="comment">/*var upload = multer(&#123;</span></span><br><span class="line"><span class="comment">	//如果用这种方法上传，要手动添加文明名后缀</span></span><br><span class="line"><span class="comment">        //如果用下面配置的代码，则可以省略这一句</span></span><br><span class="line"><span class="comment">	dest: 'uploads/'</span></span><br><span class="line"><span class="comment">&#125;)*/</span></span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>配置<br>设置保存文件的地方，并根据上传的文件名对应文件添加后缀<br>可以通过<code>filename</code>属性定制文件保存的格式</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>属性值</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>destination</code></td>
+<td>设置资源的保存路径。注意，如果没有这个配置项，默认会保存在<code>/tmp/uploads</code>下。此外，路径需要自己创建</td>
+</tr>
+<tr>
+<td><code>filename</code></td>
+<td>设置资源保存在本地的文件名</td>
+</tr>
+</tbody></table>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> storage = multer.diskStorage(&#123;</span><br><span class="line">	<span class="comment">//设置上传后文件路径，uploads文件夹会自动创建。</span></span><br><span class="line">	destination: <span class="function"><span class="keyword">function</span>(<span class="params">req, file, cb</span>) </span>&#123;</span><br><span class="line">		cb(<span class="literal">null</span>, <span class="string">'./uploads'</span>)</span><br><span class="line">	&#125;,</span><br><span class="line">	<span class="comment">//给上传文件重命名，获取添加后缀名</span></span><br><span class="line">	filename: <span class="function"><span class="keyword">function</span>(<span class="params">req, file, cb</span>) </span>&#123;</span><br><span class="line">		<span class="keyword">var</span> fileFormat = (file.originalname).split(<span class="string">"."</span>);</span><br><span class="line">		<span class="comment">//给图片加上时间戳格式防止重名名</span></span><br><span class="line">		<span class="comment">//比如把 abc.jpg图片切割为数组[abc,jpg],然后用数组长度-1来获取后缀名</span></span><br><span class="line">		cb(<span class="literal">null</span>, file.fieldname + <span class="string">'-'</span> + <span class="built_in">Date</span>.now() + <span class="string">"."</span> + fileFormat[fileFormat.length - <span class="number">1</span>]);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;);</span><br><span class="line"><span class="keyword">var</span> upload = multer(&#123;</span><br><span class="line">	storage: storage</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>接受文件<br><code>upload.single(&#39;xxx&#39;)</code>，xxx与表单中的name属性的值对应<br>这里虽然用到post请求，但实际上不需要<code>bodyParser</code>模块处理</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">app.post(<span class="string">'/upload-single'</span>, upload.single(<span class="string">'logo'</span>), <span class="function"><span class="keyword">function</span>(<span class="params">req, res, next</span>) </span>&#123;</span><br><span class="line">	<span class="built_in">console</span>.log(req.file)</span><br><span class="line">	<span class="built_in">console</span>.log(<span class="string">'文件类型：%s'</span>, req.file.mimetype);</span><br><span class="line">	<span class="built_in">console</span>.log(<span class="string">'原始文件名：%s'</span>, req.file.originalname);</span><br><span class="line">	<span class="built_in">console</span>.log((req.file.originalname).split(<span class="string">"."</span>))</span><br><span class="line">	<span class="built_in">console</span>.log(<span class="string">'文件大小：%s'</span>, req.file.size);</span><br><span class="line">	<span class="built_in">console</span>.log(<span class="string">'文件保存路径：%s'</span>, req.file.path);</span><br><span class="line">	res.send(&#123;</span><br><span class="line">		ret_code: <span class="string">'0'</span></span><br><span class="line">	&#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>多图上传<br>多图上传只要更改一下地方，前端往file输入框加多一个<code>multiple=&quot;multiple&quot;</code>属性值，此时就可以在选图的时候多选了，当然也可以并列多个file输入框(不推荐多个上传图片输入框)，这样体验会不好</li>
+</ol>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"file"</span> <span class="attr">name</span>=<span class="string">"logo"</span> <span class="attr">multiple</span>=<span class="string">"multiple"</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>后端也需要相应的改变</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">app.post(<span class="string">'/upload-single'</span>, upload.single(<span class="string">'logo'</span>), <span class="function"><span class="keyword">function</span>(<span class="params">req, res, next</span>) </span>&#123;</span><br><span class="line"><span class="comment">//upload.single('logo')变为upload.array('logo', 2)，数字代表可以接受多少张图片</span></span><br><span class="line">app.post(<span class="string">'/upload-single'</span>, upload.array(<span class="string">'logo'</span>, <span class="number">2</span>), <span class="function"><span class="keyword">function</span>(<span class="params">req, res, next</span>) </span>&#123;</span><br></pre></td></tr></table></figure>
+
+<p>如果不想有图片数量上传限制，我们可以用<code>upload.any()</code>方法</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">app.post(<span class="string">'/upload-single'</span>, upload.any(), <span class="function"><span class="keyword">function</span>(<span class="params">req, res, next</span>) </span>&#123;	</span><br><span class="line">	res.append(<span class="string">"Access-Control-Allow-Origin"</span>,<span class="string">"*"</span>);</span><br><span class="line">	res.send(&#123;</span><br><span class="line">		wscats_code: <span class="string">'0'</span></span><br><span class="line">	&#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>前端部分</li>
+</ol>
+<ul>
+<li>formData表单提交</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">"http://localhost:3000/upload-single"</span> <span class="attr">method</span>=<span class="string">"post"</span> <span class="attr">enctype</span>=<span class="string">"multipart/form-data"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">h2</span>&gt;</span>单图上传<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"file"</span> <span class="attr">name</span>=<span class="string">"logo"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"submit"</span> <span class="attr">value</span>=<span class="string">"提交"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>formData表单+ajax提交</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;form id=<span class="string">"uploadForm"</span>&gt;</span><br><span class="line">	&lt;p&gt;指定文件名： &lt;input type=<span class="string">"text"</span> name=<span class="string">"filename"</span> value=<span class="string">""</span> /&gt;&lt;<span class="regexp">/p&gt;</span></span><br><span class="line"><span class="regexp">	&lt;p&gt;上传文件： &lt;input type="file" name="logo" /</span>&gt;&lt;<span class="regexp">/ p&gt;</span></span><br><span class="line"><span class="regexp">	&lt;input type="button" value="上传" onclick="doUpload()" /</span>&gt;</span><br><span class="line">&lt;<span class="regexp">/form&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><code>FormData</code>对象，是可以使用一系列的键值对来模拟一个完整的表单，然后使用<code>XMLHttpRequest</code>发送这个”表单”</p>
+<p><strong>注意点</strong></p>
+<ul>
+<li>processData设置为false。因为data值是FormData对象，不需要对数据做处理。</li>
+<li><code>&lt;form&gt;</code>标签添加<code>enctype=&quot;multipart/form-data&quot;</code>属性。</li>
+<li>cache设置为false，上传文件不需要缓存。</li>
+<li>contentType设置为false。因为是由<code>&lt;form&gt;</code>表单构造的FormData对象，且已经声明了属性<code>enctype=&quot;multipart/form-data&quot;</code>，所以这里设置为false</li>
+</ul>
+<p>上传后，服务器端代码需要使用从查询参数名为logo获取文件输入流对象，因为<code>&lt;input&gt;</code>中声明的是<code>name=&quot;logo&quot;</code></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">doUpload</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	$.ajax(&#123;</span><br><span class="line">		url: <span class="string">'http://localhost:3000/upload-single'</span>,</span><br><span class="line">		type: <span class="string">'POST'</span>,</span><br><span class="line">		cache: <span class="literal">false</span>, <span class="comment">//不必须</span></span><br><span class="line">		data: <span class="keyword">new</span> FormData($(<span class="string">'#uploadForm'</span>)[<span class="number">0</span>]),</span><br><span class="line">		processData: <span class="literal">false</span>,<span class="comment">//必须</span></span><br><span class="line">		contentType: <span class="literal">false</span>,<span class="comment">//必须</span></span><br><span class="line">		success: <span class="function"><span class="keyword">function</span>(<span class="params">data</span>) </span>&#123;</span><br><span class="line">			<span class="built_in">console</span>.log(data)</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>参考文档<br><a href="https://github.com/Wscats/node-tutorial/tree/master/uploadFiles" target="_blank" rel="noopener">Github MyDemo</a><br><a href="https://github.com/expressjs/multer" target="_blank" rel="noopener">Github Multer</a><br><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/FormData/Using_FormData_Objects" target="_blank" rel="noopener">MDN FormData对象的使用</a></p>
+</blockquote>
+
     
 
         <a href="/2020/07/23/Node-js/" class="post-more waves-effect waves-button">
